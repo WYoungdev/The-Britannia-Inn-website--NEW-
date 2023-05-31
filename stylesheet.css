@@ -1,0 +1,10 @@
+/* =============================================== Background image =============================================== */
+body {
+    background: url('https://i.ibb.co/pyghD7n/Britannia-inn-background-img-blurred-1-edited.jpg') no-repeat center center fixed;
+    /*The following code ensures that the background is responsive on all browsers */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+/* ================================================================================================================ */
