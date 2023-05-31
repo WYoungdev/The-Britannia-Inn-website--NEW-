@@ -64,7 +64,6 @@ body {
   font-size: 1.5vw; /* Sets the font size */
   color: #ffffff; /* Sets the font colour */
   text-align: start; /* Aligns the text to the left side of the page */
-  margin-left: 0.7vw; /* Adds a margin to the left of the paragraph, moving it right */
   text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
 }
 /* ================================================================================================================ */
