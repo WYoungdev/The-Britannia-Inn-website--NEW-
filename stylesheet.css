@@ -67,3 +67,22 @@ body {
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
 }
 /* ================================================================================================================ */
+
+/* ================================================ The menu button ================================================ */
+/*This is the styling for the 'View Menu' button' */
+.btn-outline-secondary {
+  background-color: transparent; /* Sets button background to transparent */
+  font-family: Kaisei Tokumin; /* Sets the font type */
+  color: #ffffff; /* Sets the font colour */
+  outline: 0.2vw solid white; /* Sets a responsive outline to white */
+  margin-top: 0.5vh; /* Adds a margin to the top of the button, pushing it down */
+  margin-left: 0.7vw; /* Adds a margin to the left of the button, pushing it right */
+  text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
+}
+/*This is the styling for the 'View Menu' button' when hovered on */
+.btn-outline-secondary:hover {
+  background-color: #D3D3D3; /* Sets the button background to grey when hovered on */
+  font-family: Kaisei Tokumin; /* Sets the font type */
+  color: #000000; /* Sets the font colour to black when hovered on */
+}
+/* ================================================================================================================= */
