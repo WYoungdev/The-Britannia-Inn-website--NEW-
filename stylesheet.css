@@ -13,8 +13,6 @@ body {
 /* ================================================ Navigation bar ================================================ */
 /* This is the styling for the overall navigation bar */
 .nav-pills {
-    margin-right: -6%; /* Adds a margin to the right of the whole nav bar */
-    margin-top: 1.5%; /* Adds a margin to the top of the whole nav bar */
     display: flex; /* Places the navigation bar in a flex box */
     justify-content: flex-end; /* Aligns the flex box to the right (end) of the webpage */
   }
@@ -53,7 +51,7 @@ body {
   font-family: Kaisei Tokumin; /* Sets the font type */
   font-size: 4.5vw; /* Sets the font size */
   color: #ffffff; /* Sets the font colour */
-  text-align: center; /* Aligns the text to the left side of the page */
+  text-align: start; /* Aligns the text to the left side of the page */
   text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
 }
 /* ================================================================================================================ */
@@ -71,12 +69,12 @@ body {
 /* ================================================ The menu button ================================================ */
 /*This is the styling for the 'View Menu' button' */
 .btn-outline-secondary {
+  position: relative;
   background-color: transparent; /* Sets button background to transparent */
   font-family: Kaisei Tokumin; /* Sets the font type */
+  font-size: 0.9rem; /* Sets the font size */
   color: #ffffff; /* Sets the font colour */
   outline: 0.2vw solid white; /* Sets a responsive outline to white */
-  margin-top: 0.5vh; /* Adds a margin to the top of the button, pushing it down */
-  margin-left: 0.7vw; /* Adds a margin to the left of the button, pushing it right */
   text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
 }
 /*This is the styling for the 'View Menu' button' when hovered on */
