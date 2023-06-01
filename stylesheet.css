@@ -89,9 +89,6 @@ body {
 /* =================================================== The Footer =================================================== */
 /* This is the styling for the footer background */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   height: 12.6vh;
 }
@@ -101,17 +98,11 @@ body {
 .footer-text-midleft {
   font-size: 0.80vw;
   position: absolute;
-  bottom: 0;
-  padding: 1.5vh 1.5vh 0;
   color: white;
   text-align: left;
   text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4);
 }
-.footer-text-right {
-  right: 0;
-}
 .footer-text-midleft {
-  left: 0;
-  padding: 1.5vh 1.5vh 5vh 23vh;
+  padding: 1.5vh 1.5vh 0vh 8vh;
 }
 /* ================================================================================================================== */
