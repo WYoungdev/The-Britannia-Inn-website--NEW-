@@ -27,6 +27,7 @@ body {
     border: 1px solid transparent; /* Adds a transparent border to prevent other buttons from moving when hovering */
     padding: 0.5rem 1rem; /* Adjusts the padding to compensate for the added border */
     transition: all 0.3s ease; /* Adds a smooth transition effect to each button */
+    white-space: nowrap; /* Prevents text from wrapping */
   }
   /* This is the styling for navigation buttons when hovered */
   .nav-pills .nav-link:hover {
