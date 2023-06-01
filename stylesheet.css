@@ -166,5 +166,16 @@ body {
 /* ================================================= The Menu options ================================================ */
 .menu-options {
   list-style-type: none;
+  margin-top: -3%;
+  font-family: Jacques Francois;
+}
+.menu-options li {
+  margin-bottom: 2%;
+}
+.menu-options h6 {
+  font-size: 1.1em;
+}
+.menu-options p {
+  font-size: 0.65em;
 }
 /* =================================================================================================================== */
