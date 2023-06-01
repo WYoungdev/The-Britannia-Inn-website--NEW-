@@ -163,19 +163,38 @@ body {
 }
 /* ================================================================================================================== */
 
-/* ================================================= The Menu options ================================================ */
-.menu-options {
+/* ================================================ The Mains options =============================================== */
+.mains-options {
   list-style-type: none;
   margin-top: -3%;
   font-family: Jacques Francois;
 }
-.menu-options li {
+.mains-options li {
   margin-bottom: 2%;
 }
-.menu-options h6 {
+.mains-options h6 {
   font-size: 1.1em;
 }
-.menu-options p {
+.mains-options p {
+  font-size: 0.65em;
+}
+/* ================================================================================================================== */
+
+/* =============================================== The Desserts options ============================================== */
+.desserts-options {
+  list-style-type: none;
+  margin-top: -3%;
+  font-family: Jacques Francois;
+  margin-top: -102%;
+  margin-left: 30%;
+}
+.desserts-options li {
+  margin-bottom: 2%;
+}
+.desserts-options h6 {
+  font-size: 1.1em;
+}
+.desserts-options p {
   font-size: 0.65em;
 }
 /* =================================================================================================================== */
