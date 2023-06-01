@@ -171,12 +171,19 @@ body {
 }
 .mains-options li {
   margin-bottom: 2%;
+  position: relative;
 }
 .mains-options h6 {
   font-size: 1.1em;
 }
 .mains-options p {
   font-size: 0.65em;
+}
+.menu-price {
+  position: absolute;
+  margin-left: 43%;
+  top: 25%;
+  transform: translateY(-50%);
 }
 /* ================================================================================================================== */
 
