@@ -1,0 +1,32 @@
+.nav-pills {
+    display: flex; /* Places the navigation bar in a flex box */
+    justify-content: flex-end; /* Aligns the flex box to the right (end) of the webpage */
+  }
+  /* This is the styling for each navigation button */
+  .nav-pills .nav-link {
+    color: #ffffff; /* Sets the nav text colour to white */
+    font-family: Kaisei Tokumin; /* Sets the nav text font */
+    font-size: 1.5vw; /* Sets the nav text font size */
+    margin-top: 3.75%; /* Adds a responsive top margin to each button */
+    margin-right: 15%; /* Changes the spacing between each button */
+    text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to all nav text */
+    border: 1px solid transparent; /* Adds a transparent border to prevent other buttons from moving when hovering */
+    padding: 0.5rem 1rem; /* Adjusts the padding to compensate for the added border */
+    transition: all 0.3s ease; /* Adds a smooth transition effect to each button */
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  /* This is the styling for navigation buttons when hovered */
+  .nav-pills .nav-link:hover {
+    color: #000000; /* Sets the nav text to black when hovered */
+    background-color: #D3D3D3; /* Sets the button background to grey when hovered */
+    padding: 0.5rem 1rem; /* Maintains button padding */
+    border-radius: 10%; /* Adds rounding to each button when hovered */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds slight shadowing to each button when hovered */
+  }
+  /* This is the styling for navigation button that is active */
+  .nav-pills .nav-link.active {
+    background-color: rgba(211, 211, 211, 0.5); /* Sets the background color for the current page */
+    color: #000000; /* Sets the text color for the current page */
+    border-radius: 10%; /* Adds rounding to the current page's button */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds shadow to the current page's button */
+  }

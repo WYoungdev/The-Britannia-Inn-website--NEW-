@@ -22,7 +22,7 @@ body {
     font-family: Kaisei Tokumin; /* Sets the nav text font */
     font-size: 1.5vw; /* Sets the nav text font size */
     margin-top: 3.75%; /* Adds a responsive top margin to each button */
-    margin-right: 25px; /* Changes the spacing between each button */
+    margin-right: 5%; /* Changes the spacing between each button */
     text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to all nav text */
     border: 1px solid transparent; /* Adds a transparent border to prevent other buttons from moving when hovering */
     padding: 0.5rem 1rem; /* Adjusts the padding to compensate for the added border */
@@ -33,7 +33,7 @@ body {
   .nav-pills .nav-link:hover {
     color: #000000; /* Sets the nav text to black when hovered */
     background-color: #D3D3D3; /* Sets the button background to grey when hovered */
-    padding: 0.5rem 1rem; /* Maintains button padding */
+    padding: 0.5rem rem; /* Maintains button padding */
     border-radius: 10%; /* Adds rounding to each button when hovered */
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds slight shadowing to each button when hovered */
   }
