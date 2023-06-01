@@ -179,7 +179,7 @@ body {
 .mains-options p {
   font-size: 0.65em;
 }
-.menu-price {
+.mains-price {
   font-family: Jacques Francois;
   font-weight: bold;
   font-size: 0.8em;
@@ -200,11 +200,21 @@ body {
 }
 .desserts-options li {
   margin-bottom: 2%;
+  position: relative;
 }
 .desserts-options h6 {
   font-size: 1.1em;
 }
 .desserts-options p {
   font-size: 0.65em;
+}
+.desserts-price {
+  font-family: Jacques Francois;
+  font-weight: bold;
+  font-size: 0.8em;
+  position: absolute;
+  margin-left: 110%;
+  top: 27%;
+  transform: translateY(-50%);
 }
 /* =================================================================================================================== */
