@@ -180,6 +180,9 @@ body {
   font-size: 0.65em;
 }
 .menu-price {
+  font-family: Jacques Francois;
+  font-weight: bold;
+  font-size: 0.8em;
   position: absolute;
   margin-left: 43%;
   top: 25%;
