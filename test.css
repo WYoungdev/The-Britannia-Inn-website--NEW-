@@ -30,3 +30,19 @@
     border-radius: 10%; /* Adds rounding to the current page's button */
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds shadow to the current page's button */
   }
+
+
+
+
+
+
+  .room-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 80%;
+    height: auto;
+    margin-top: 15%;
+  }
