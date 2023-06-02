@@ -222,8 +222,17 @@ body {
 
 /* ============================================= The Accomodation heading ============================================ */
 .accommodation-header {
-font-family: Jacques Francois;
-font-size: 2.3em;
+font-family: Kaisei Tokumin;
+font-size: 2.2em;
 margin-top: 1%;
+text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.5);
 }
 /* =================================================================================================================== */
+
+/* =============================================== The Accomodation text ============================================== */
+.accommodation-paragraph {
+  font-family: Kaisei Tokumin;
+  font-size: 1.3vw;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.5);
+}
+/* ==================================================================================================================== */
