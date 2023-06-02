@@ -229,7 +229,7 @@ body {
 /* ============================================= The Accomodation heading ============================================ */
 .accommodation-header {
 font-family: Kaisei Tokumin;
-font-size: 2.2em;
+font-size: 2em;
 margin-top: 1%;
 text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
@@ -238,7 +238,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 /* =============================================== The Accomodation text ============================================== */
 .accommodation-paragraph {
   font-family: Kaisei Tokumin;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
 /* ==================================================================================================================== */
@@ -246,7 +246,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 /* ================================================= Room service text ================================================ */
 .room-service-paragraph {
   font-family: Kaisei Tokumin;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
   margin-top: -1%;
 }
@@ -254,17 +254,12 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 
 /* ==================================================== Room images =================================================== */
 .room-images {
-  position: relative;
-  width: 100%;
-  height: 30%;
-  padding-bottom: 100%;
+  display: flex;
+  justify-content: center;
 }
-.room-images img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 60%;
-  margin-top: 10%;
+img {
+  width: 80%;
+  height: auto;
+  margin-top: 15%;
 }
 /* ==================================================================================================================== */
