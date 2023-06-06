@@ -293,7 +293,12 @@ img {
   width: 20%;
   max-width: 70%;
   margin-left: 3%;
-  margin-top: 10%;
   border-radius: 1.5%;
+}
+.image-container {
+  display: flex;
+}
+.text-right {
+  margin-left: 10px; /* Styling */
 }
 /* ================================================================================================================== */
