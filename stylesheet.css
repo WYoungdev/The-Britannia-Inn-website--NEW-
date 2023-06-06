@@ -229,7 +229,7 @@ body {
 /* ============================================= The Accomodation heading ============================================ */
 .accommodation-header {
 font-family: Kaisei Tokumin;
-font-size: 2em;
+font-size: 3vw;
 margin-top: 1%;
 text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
@@ -252,26 +252,26 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
 /* ==================================================================================================================== */
 
-/* ==================================================== Room images =================================================== */
+/* ==================================================== Room images and text =================================================== */
 .room-images {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .image-title {
   font-size: 2vw;
-  margin-bottom: 2vh;
+  margin-bottom: 0.5vh;
+  font-family: Kaisei Tokumin;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
-
 .image-subtitle {
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   margin-top: 0.5vh;
+  font-family: Kaisei Tokumin;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
-
 img {
   width: 80%;
   height: auto;
 }
-
-/* ==================================================================================================================== */
+/* ============================================================================================================================= */
