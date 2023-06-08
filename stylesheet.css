@@ -288,11 +288,10 @@ img {
 /* =================================================================================================================== */
 
 /* ================================================= Local area images ================================================ */
-.local-area-image {
-  max-width: 200px;
-  height: auto;
+.local-area-image-container {
+  padding: 20px;
 }
-.local-image-2 {
+.local-area-image {
   max-width: 200px;
   height: auto;
 }
