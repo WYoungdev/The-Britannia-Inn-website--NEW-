@@ -288,11 +288,24 @@ img {
 /* =================================================================================================================== */
 
 /* ================================================= Local area images ================================================ */
-.local-area-image-container {
-
+.local-image {
+  width: 70%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  /* Add any other custom styles you want */
 }
-.local-area-image {
-  max-width: 200px;
-  height: auto;
+
+/* Example styles for the local-area-image-container */
+.local-area-image-container {
+  max-width: 800px; /* Adjust the container width as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Example styles for the text */
+.local-area-image-container p {
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Adjust the font size as needed */
+  /* Add any other custom styles you want */
 }
 /* ==================================================================================================================== */
