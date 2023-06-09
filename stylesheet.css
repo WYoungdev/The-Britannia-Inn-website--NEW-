@@ -340,26 +340,51 @@ img {
 }
 /* ==================================================================================================================== */
 
-/* =================================================== Form styling =================================================== */
+/* =============================================== Contact form styling =============================================== */
+/* Custom CSS for the form */
 .form-container {
-  font-family: Arial, sans-serif;
-  max-width: 400px;
-  margin: 0;
+  width: 40%; /* Adjusts overall width of the form */
+  margin-left: 6%; /* Adjusts the margin to the left of the entire form */
 }
 .form-container .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 0%; /* Adjusts the spacing between each field */
 }
 .form-container label {
-  font-weight: bold;
+  font-family: Kaisei Tokumin; /* Adjusts form label font type */
+  font-size: 2.8vh;
 }
 .form-container .form-row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: -1%; /* Adjusts the right margin of the First/Last name fields */
+  margin-left: -1%; /* Adjusts the left margin of the First/Last name fields */
 }
 .form-container .form-row .col {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 1%; /* Adjusts the space between First and Last name sections */
+  padding-left: 1%; /* ,,, */
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"] {
+  width: 100%; /* Adjusts the width of the field boxes */
+  padding: 2px; /* Adjusts the padding of the field boxes */
+  box-sizing: border-box;
+}
+/* Adjusts the size of the placeholder font */
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  font-size: 2.8vh; /* Adjusts the size of the placeholder font */
+}
+.form-container textarea {
+  width: 100%; /* Adjusts the width of the text box for questions */
+  padding: 2px; /* Adjusts the padding of the text box for questions */
+  box-sizing: border-box;
+  resize: vertical;
+  height: 100px; /* Adjusts the height of the text box for questions */
+}
+.form-container button[type="submit"] {
+  width: 20%;
+  margin-top: 2%;
+  background-color: #000000;
 }
 /* ==================================================================================================================== */
