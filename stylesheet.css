@@ -325,9 +325,8 @@ img {
 /*This is the styling for the 'Britannia Inn' header on the home page */
 .intouch-header {
   font-family: Kaisei Tokumin;
-  font-size: 4.5vw;
-  color: #ffffff;
-  text-align: start;
-  text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5);
-}
+  font-size: 3vw;
+  margin-top: 1%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  }
 /* ==================================================================================================================== */
