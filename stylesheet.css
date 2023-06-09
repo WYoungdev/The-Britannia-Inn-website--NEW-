@@ -343,13 +343,23 @@ img {
 /* =================================================== Form styling =================================================== */
 .form-container {
   font-family: Arial, sans-serif;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 0;
 }
 .form-container .form-group {
   margin-bottom: 20px;
 }
 .form-container label {
   font-weight: bold;
+}
+.form-container .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.form-container .form-row .col {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 /* ==================================================================================================================== */
