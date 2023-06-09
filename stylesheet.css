@@ -326,7 +326,8 @@ img {
 .intouch-header {
   font-family: Kaisei Tokumin;
   font-size: 3vw;
-  margin-top: 1%;
+  margin-top: 2%;
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  margin-left: 6%;
   }
 /* ==================================================================================================================== */
