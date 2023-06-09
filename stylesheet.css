@@ -341,7 +341,6 @@ img {
 /* ==================================================================================================================== */
 
 /* =============================================== Contact form styling =============================================== */
-/* Custom CSS for the form */
 .form-container {
   width: 40%; /* Adjusts overall width of the form */
   margin-left: 6%; /* Adjusts the margin to the left of the entire form */
@@ -385,6 +384,15 @@ img {
 .form-container button[type="submit"] {
   width: 20%;
   margin-top: 2%;
-  background-color: #000000;
+  background-color: transparent;
+  color: #000000;
+  border-color: #000000;
+  transition: background-color 0.3s ease; /* Adds a transition for smooth hover effect */
+}
+/* Adjusts the hover behavior for the submit button */
+.form-container button[type="submit"]:hover {
+  background-color: #000000; /* Changes the background color on hover */
+  color: #ffffff; /* Changes the text color on hover */
+  border-color: #000000;
 }
 /* ==================================================================================================================== */
