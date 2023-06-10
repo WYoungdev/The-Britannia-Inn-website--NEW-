@@ -1,4 +1,1 @@
-// Function
-function sayHello() {
-    alert(greeting);
-  }
+// Script for the Google maps API //
