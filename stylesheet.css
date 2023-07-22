@@ -15,12 +15,13 @@ body {
 .nav-pills {
     display: flex; /* Places the navigation bar in a flex box */
     justify-content: flex-end; /* Aligns the flex box to the right (end) of the webpage */
+    margin-top: 1%; /* Adds an upper margin to the overall navigation bar to push the element down */
   }
   /* This is the styling for each navigation button */
   .nav-pills .nav-link {
     color: #ffffff; /* Sets the nav text colour to white */
     font-family: Kaisei Tokumin; /* Sets the nav text font */
-    font-size: 1.5vw; /* Sets the nav text font size */
+    font-size: 1.7vw; /* Sets the nav text font size */
     margin-top: 3.75%; /* Adds a responsive top margin to each button */
     margin-right: 5%; /* Changes the spacing between each button */
     text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to all nav text */
