@@ -399,8 +399,10 @@ img {
 
 /* =========================================== Interactive Google map (NEEDS WORK) =========================================== */
 #map {
-  height: 80vh;
-  aspect-ratio: 10/10;
+  height: 60vh;
+  width: 80vh;
+  margin-top: -25%;
+  margin-right: 5%;
 }
 .map-container {
   display: flex;
