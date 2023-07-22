@@ -399,9 +399,9 @@ img {
 
 /* =========================================== Interactive Google map (NEEDS WORK) =========================================== */
 #map {
-  height: 60vh;
-  width: 80vh;
-  margin-top: -25%;
+  height: 60h;
+  width: 70vh;
+  margin-top: -20%;
   margin-right: 5%;
 }
 .map-container {
