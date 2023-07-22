@@ -74,7 +74,7 @@ body {
   position: relative;
   background-color: transparent; /* Sets button background to transparent */
   font-family: Kaisei Tokumin; /* Sets the font type */
-  font-size: 0.9rem; /* Sets the font size */
+  font-size: 1.7rem; /* Sets the font size */
   color: #ffffff; /* Sets the font colour */
   outline: 0.2vw solid white; /* Sets a responsive outline to white */
   text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
