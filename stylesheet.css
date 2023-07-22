@@ -173,7 +173,6 @@ body {
 .mains-options {
   list-style-type: none;
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  margin-top: -3%;
   font-family: Jacques Francois;
 }
 .mains-options li {
@@ -181,10 +180,10 @@ body {
   position: relative;
 }
 .mains-options h6 {
-  font-size: 1.1em;
+  font-size: 1.9rem;
 }
 .mains-options p {
-  font-size: 0.65em;
+  font-size: 0.8rem;
 }
 .mains-price {
   font-family: Jacques Francois;
