@@ -346,7 +346,7 @@ img {
   padding-top: 5%; /* Moves the entire form downwards on the page */
 }
 .form-container .form-group {
-  margin-bottom: 0%; /* Adjusts the spacing between each field */
+  margin-bottom: 2%; /* Adjusts the spacing between each field in the form */
 }
 .form-container label {
   font-family: Kaisei Tokumin; /* Adjusts form label font type */
