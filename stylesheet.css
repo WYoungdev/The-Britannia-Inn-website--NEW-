@@ -183,16 +183,15 @@ body {
   font-size: 1.9rem;
 }
 .mains-options p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .mains-price {
   font-family: Jacques Francois;
   font-weight: bold;
   font-size: 0.8em;
   position: absolute;
-  margin-left: 43%;
+  margin-left: 50%;
   top: 25%;
-  transform: translateY(-50%);
 }
 /* ================================================================================================================== */
 
