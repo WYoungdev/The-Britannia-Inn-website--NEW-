@@ -188,7 +188,7 @@ body {
 .mains-price {
   font-family: Jacques Francois;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   position: absolute;
   margin-left: 50%;
   top: 20%;
@@ -217,11 +217,10 @@ body {
 .desserts-price {
   font-family: Jacques Francois;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   position: absolute;
-  margin-left: 110%;
-  top: 27%;
-  transform: translateY(-50%);
+  margin-left: 100%;
+  top: 20%;
 }
 /* =================================================================================================================== */
 
