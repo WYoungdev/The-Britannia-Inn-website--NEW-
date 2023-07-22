@@ -343,6 +343,7 @@ img {
 .form-container {
   width: 40%; /* Adjusts overall width of the form */
   margin-left: 6%; /* Adjusts the margin to the left of the entire form */
+  padding-top: 5%; /* Moves the entire form downwards on the page */
 }
 .form-container .form-group {
   margin-bottom: 0%; /* Adjusts the spacing between each field */
