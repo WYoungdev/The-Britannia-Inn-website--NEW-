@@ -321,7 +321,9 @@ img {
 /* ==================================================================================================================== */
 
 /* ================================================= Contact headings ================================================= */
-.contact-heading {
+.contact-left-heading {
+  left: 0;
+  margin-left: 6%;
   position: absolute;
   top: 0;
   font-family: Kaisei Tokumin;
@@ -329,13 +331,35 @@ img {
   margin-top: 5.5%;
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
-.contact-left-heading {
-  left: 0;
-  margin-left: 6%;
-}
 .contact-right-heading {
   right: 0;
   margin-right: 6%;
+  position: absolute;
+  top: 0;
+  font-family: Kaisei Tokumin;
+  font-size: 3vw;
+  margin-top: 5.5%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+.brit-header-1{
+  right: 0;
+  margin-right: 6%;
+  position: absolute;
+  top: 0;
+  font-family: Kaisei Tokumin;
+  font-size: 1.5vw;
+  margin-top: 5.5%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+.brit-header-2{
+  right: 0;
+  margin-right: 6%;
+  position: absolute;
+  top: 0;
+  font-family: Kaisei Tokumin;
+  font-size: 1.5vw;
+  margin-top: 5.5%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
 /* ==================================================================================================================== */
 
