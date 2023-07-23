@@ -461,27 +461,47 @@ img {
 /* ================================================================================================================== */
 /* =============================================== Dark Mode styling =============================================== */
 /* class for dark mode */
-.dark-mode {
-  background: #333333; /* Changes to the dark background color */
-  color: #ffffff; /* Changes to the dark text color */
+/* Adjusts the size of the Dark Mode button */
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.8rem;
 }
-
 /* inverts the navbar colors in dark mode */
 .dark-mode .nav-pills .nav-link,
 .dark-mode .nav-pills .nav-link.active {
-  color: #ffffff;
+  color: #000000;
 }
-
 .dark-mode .nav-pills .nav-link:hover {
   background-color: #333333;
-  color: #ffffff;
+  color: #000000;
 }
-
 /* inverts the footer colors in dark mode */
 .dark-mode .footer-text-left,
 .dark-mode .footer-text-right,
 .dark-mode .footer-text-midleft,
 .dark-mode .footer-navigation {
-  color: #ffffff;
+  color: #000000;
+}
+.dark-mode .britannia-header {
+  color: #000000; /* Sets the font colour */
+}
+.dark-mode .britannia-paragraph {
+  color: #000000; /* Sets the font colour */
+}
+.dark-mode .btn-outline-secondary {
+  color: #000000; /* Sets the font colour */
+  outline: 0.2vw solid rgb(0, 0, 0); /* Sets a responsive outline to white */
+}
+/*This is the styling for the 'View Menu' button' when hovered on */
+.btn-outline-secondary:hover {
+  background-color: #000000; /* Sets the button background to grey when hovered on */
+  font-family: Kaisei Tokumin; /* Sets the font type */
+  color: #ffffff; /* Sets the font colour to black when hovered on */
+}
+.dark-mode .opening-time-header{
+  color: #000000;
+}
+.dark-mode .opening-times-paragraph{
+  color: #000000;
 }
 /* ================================================================================================================= */
