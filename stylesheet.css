@@ -112,8 +112,8 @@ body {
 }
 /* ===================================================================================================================== */
 
-/* ============================================== The Menu background ============================================== */
-/* This is the styling for the menu background. */
+/* ================================================ Offwhite background ================================================ */
+/* This is the styling for the off white background for all pages. */
 .page-background {
   position: absolute;
   top: 11%;
@@ -174,6 +174,7 @@ body {
 /* ================================================================================================================== */
 
 /* ================================================ The Mains options =============================================== */
+/* This is the styling for the mains options */
 .mains-options {
   list-style-type: none;
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
@@ -200,6 +201,7 @@ body {
 /* ================================================================================================================== */
 
 /* =============================================== The Desserts options ============================================== */
+/* This is the styling for the Desserts options */
 .desserts-options {
   list-style-type: none;
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
@@ -230,6 +232,7 @@ body {
 /* =================================================================================================================== */
 
 /* ============================================= The Accomodation heading ============================================ */
+/* This is the styling for the accomodation heading */
 .accommodation-header {
 font-family: Kaisei Tokumin;
 font-size: 3vw;
@@ -239,6 +242,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 /* =================================================================================================================== */
 
 /* =============================================== The Accomodation text ============================================== */
+/* This is the styling for the accomodation paragraph */
 .accommodation-paragraph {
   font-family: Kaisei Tokumin;
   font-size: 1.2vw;
@@ -247,6 +251,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 /* ==================================================================================================================== */
 
 /* ================================================= Room service text ================================================ */
+/* This is the styling for the room service text */
 .room-service-paragraph {
   font-family: Kaisei Tokumin;
   font-size: 1.2vw;
@@ -256,6 +261,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 /* ==================================================================================================================== */
 
 /* ================================================ Room images and text =============================================== */
+/* This is the styling for the room images and accompanying headers and subtitles */
 .room-images {
   display: flex;
   flex-direction: column;
@@ -282,6 +288,7 @@ img {
 /* ===================================================================================================================== */
 
 /* ============================================= The Local Area heading ============================================ */
+/* This is the styling for the local area heading */
 .local-area-header {
   font-family: Kaisei Tokumin;
   font-size: 3vw;
@@ -291,6 +298,7 @@ img {
 /* =================================================================================================================== */
 
 /* ================================================== Local area text ================================================= */
+/* This is the styling for the local area text */
 .local-area-paragraph {
   font-family: Kaisei Tokumin;
   font-size: 1.2vw;
@@ -299,6 +307,7 @@ img {
 /* ==================================================================================================================== */
 
 /* ================================================= Local area images ================================================ */
+/* This is the styling for the local area images */
 .local-area-images {
   display: flex;
   flex-direction: column;
@@ -325,6 +334,7 @@ img {
 /* ==================================================================================================================== */
 
 /* ================================================= Contact headings ================================================= */
+/* This is the styling for the contact headings */
 .contact-left-heading {
   left: 0;
   margin-left: 6%;
@@ -357,6 +367,7 @@ img {
 /* ==================================================================================================================== */
 
 /* =============================================== Contact form styling =============================================== */
+/* This is the styling for the contact form */
 .form-container {
   width: 40%; /* Adjusts overall width of the form */
   margin-left: 6%; /* Adjusts the margin to the left of the entire form */
@@ -415,6 +426,7 @@ img {
 /* ==================================================================================================================== */
 
 /* ============================================== Interactive Google map ============================================== */
+/* This is the styling for the interactive google map */
 #map {
   height: 800h;
   width: 80vh;
@@ -459,49 +471,204 @@ img {
 /* ================================================================================================================== */
 /* ================================================================================================================== */
 /* ================================================================================================================== */
-/* =============================================== Dark Mode styling =============================================== */
+/* ================================================ Dark Mode styling ================================================ */
 /* class for dark mode */
 /* Adjusts the size of the Dark Mode button */
 .btn-sm {
   font-size: 0.8rem;
   padding: 0.2rem 0.8rem;
 }
+/* ========================================= Dark Mode styling for homepage ========================================= */
 /* inverts the navbar colors in dark mode */
-.dark-mode .nav-pills .nav-link,
-.dark-mode .nav-pills .nav-link.active {
+body#homepage.dark-mode .nav-pills .nav-link,
+body#homepage.dark-mode .nav-pills .nav-link.active {
   color: #000000;
 }
-.dark-mode .nav-pills .nav-link:hover {
+body#homepage.dark-mode .nav-pills .nav-link:hover {
   background-color: #333333;
   color: #000000;
 }
 /* inverts the footer colors in dark mode */
-.dark-mode .footer-text-left,
-.dark-mode .footer-text-right,
-.dark-mode .footer-text-midleft,
-.dark-mode .footer-navigation {
+body#homepage.dark-mode .footer-text-left,
+body#homepage.dark-mode .footer-text-right,
+body#homepage.dark-mode .footer-text-midleft,
+body#homepage.dark-mode .footer-navigation {
   color: #000000;
+  text-shadow: 0vw 0vw 0vw rgba(0, 0, 0, 0.4);
 }
-.dark-mode .britannia-header {
+body#homepage.dark-mode .britannia-header {
   color: #000000; /* Sets the font colour */
 }
-.dark-mode .britannia-paragraph {
+body#homepage.dark-mode .britannia-paragraph {
   color: #000000; /* Sets the font colour */
 }
-.dark-mode .btn-outline-secondary {
+body#homepage.dark-mode .btn-outline-secondary {
   color: #000000; /* Sets the font colour */
   outline: 0.2vw solid rgb(0, 0, 0); /* Sets a responsive outline to white */
 }
 /*This is the styling for the 'View Menu' button' when hovered on */
-.btn-outline-secondary:hover {
+body#homepage.dark-mode .btn-outline-secondary:hover {
   background-color: #000000; /* Sets the button background to grey when hovered on */
   font-family: Kaisei Tokumin; /* Sets the font type */
   color: #ffffff; /* Sets the font colour to black when hovered on */
 }
-.dark-mode .opening-time-header{
+body#homepage.dark-mode .opening-time-header {
   color: #000000;
 }
-.dark-mode .opening-times-paragraph{
+body#homepage.dark-mode .opening-times-paragraph {
   color: #000000;
+}
+/* This is the dark mode styling for the background image on the homepage ONLY */
+body#homepage.dark-mode {
+  background: url('https://i.ibb.co/WksHxnv/Britannia-background-brighter.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* ================================================================================================================== */
+
+/* ===================================== Dark Mode styling for all other pages ===================================== */
+/* ================================================= Dark Mode Menu ================================================= */
+/* This is the styling for the off white background for all pages. */
+.dark-mode .page-background {
+  background-color: #2b2b2b;
+}
+/* This is the styling for the menu heading */
+.dark-mode .menu-header {
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+/* This is the styling for the mains heading */
+.dark-mode .mains-header {
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+/* This is the styling for the desserts heading */
+.dark-mode .desserts-header {
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+/* This is the styling for the mains options */
+.dark-mode .mains-options {
+  color: #ffffff;
+}
+/* This is the styling for the mains options */
+.dark-mode .desserts-options {
+  color: #ffffff;
+}
+/* ================================================================================================================== */
+/* ================================================ Dark Mode Rooms ================================================ */
+/* This is the styling for the accomodation heading */
+.dark-mode .accommodation-header {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  }
+/* This is the styling for the accomodation paragraph */
+.dark-mode .accommodation-paragraph {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  }
+/* This is the styling for the room service text */
+.dark-mode .room-service-paragraph {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+/* This is the styling for the room images and accompanying headers and subtitles */
+
+.dark-mode .image-title {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+.dark-mode .image-subtitle {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
 }
 /* ================================================================================================================= */
+/* ============================================== Dark Mode Local area ============================================== */
+/* This is the styling for the local area heading */
+.dark-mode .local-area-header {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  }
+/* This is the styling for the local area text */
+.dark-mode .local-area-paragraph {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+/* This is the styling for the local area image text */
+.dark-mode .local-image-title {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+.dark-mode .local-image-subtitle {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+/* ================================================================================================================== */
+/* ============================================== Dark Mode Contact us ============================================== */
+/* ================================================= Contact headings ================================================= */
+/* This is the styling for the contact headings */
+.contact-left-heading {
+  left: 0;
+  margin-left: 6%;
+  position: absolute;
+  top: 0;
+  font-family: Kaisei Tokumin;
+  font-size: 3vw;
+  margin-top: 5.5%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+.contact-right-heading {
+  right: 0;
+  margin-right: 6%;
+  position: absolute;
+  top: 0;
+  font-family: Kaisei Tokumin;
+  font-size: 3vw;
+  margin-top: 5.5%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+.britannia-subheadings {
+  right: 0;
+  margin-right: 6%;
+  margin-top: 6%;
+  text-align: right;
+  position: absolute;
+  font-size: 1.8rem;
+}
+
+/* ==================================================================================================================== */
+
+/* =============================================== Contact form styling =============================================== */
+/* This is the styling for the contact form */
+.dark-mode .form-container label {
+  color: #ffffff;
+}
+.dark-mode .form-container button[type="submit"] {
+  width: 20%;
+  margin-top: 2%;
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+/* Adjusts the hover behavior for the submit button */
+.dark-mode .form-container button[type="submit"]:hover {
+  background-color: #ffffff; /* Changes the background color on hover */
+  color: #000000; /* Changes the text color on hover */
+  border-color: #ffffff;
+}
+/* This is the styling for the contact headings */
+.dark-mode .contact-left-heading {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+.dark-mode .contact-right-heading {
+  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+}
+.dark-mode .britannia-subheadings {
+  color: #ffffff;
+}
+/* ================================================================================================================== */
+/* This is the styling for  */
