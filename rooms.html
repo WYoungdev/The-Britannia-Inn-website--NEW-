@@ -19,7 +19,7 @@
 </head>
 <body>
   <header>
-    <!-- Light/Dark mode button -->
+    <!-- Creating a Light/Dark mode button with bootstrap positioning -->
     <button class="btn btn-dark btn-sm dark-mode-button position-absolute top-0 end-0 m-2" onclick="toggleDarkMode()">Light/Dark Mode</button>
     <!-- Navigation bar using bootstrap grid system-->
     <!-- Each navigation bar button is linked to the corresponding .html file using 'a href'-->
@@ -39,7 +39,7 @@
   </header>
   <main>
     <!-- place page content here -->
-    <!-- Offwhite background colour -->
+    <!-- Creating an Offwhite background colour to serve as a simple background -->
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -47,7 +47,8 @@
         </div>
       </div>
     </div>
-    <!-- Creating the Accomodation heading -->
+    <!-- Creating the Accomodation heading, which using the bootstrap grid system, will cover all 12 columns of the page, and will be positioned in the center of the page, using the 'text-center'
+    option -->
     <div class="container-fluid vertical-center">
       <div class="row">
         <div class="col-12">
@@ -55,7 +56,7 @@
         </div>
       </div>
     </div>
-    <!-- Accommodation text -->
+    <!-- Creating the Accommodation text. Here, the same 12 bootstrap columns were used as the main heading, but this text was positioned lower than the previous header using margins in CSS -->
     <h2 class="container">
       <div class="row">
         <div class="col-12">
@@ -64,7 +65,7 @@
         </div>
       </div>
     </h2>
-    <!-- Room service text -->
+    <!-- Creating the Room service text. Here, the same 12 bootstrap columns were used as the main heading, but this text was positioned lower than the previous header using margins in CSS -->
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -72,7 +73,10 @@
         </div>
       </div>
     </div>
-    <!-- Room images -->
+    <!-- Creating the Room images. Here, the 'img src' tag defines the URL source of the image that should be shown. A heading is added above the image
+    using a simple div containing text, and then a H3 subheading is added, applying a subtitle to the image. This was repeated for each of the three images needed for the webpage, which
+    were all added to column 4 of the bootstrap grid system, so that positioning all three elements could be done simultaneously, and spacing could then be added to all of the elements using
+    CSS -->
     <div class="container">
       <div class="row">
         <div class="col-4">
