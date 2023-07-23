@@ -75,28 +75,23 @@
     </div>
   </main>
   <footer>
-    <!-- place footer here -->
+    <!-- Creating the footer, and positioning it using the bootstrap grid system -->
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <footer class="footer">
-            <div class="footer-navigation bottom-0 end-0">
-              <a href="homepage.html">Home</a> |
-              <a href="menu.html">Menu</a> |
-              <a href="rooms.html">Rooms</a> |
-              <a href="local-area.html">Local area</a> |
+        <div class="col-12"> <!-- The footer consumes all 12 available columns for easier positioning, and because it should span 100% of the width of the page -->
+          <footer class="footer"> <!-- Simple text with positioning is created here in corresponding classes to be targeted in CSS -->
+            <div class="footer-text-left bottom-0 start-0"> The Britannia Inn <br> Manor Road <br> Alcombe <br> Somerset <br> TA24 6EH </div>
+            <div class="footer-text-right bottom-0 end-0"> Designed by Will Young <br> Photography by Alfred Images <br> Copyright © 2019 The Britannia Inn </div>
+            <div class="footer-text-midleft bottom-0"> Tel: 01643702384 <br> Email: thebritanniaminehead@yahoo.com <br><a href="https://www.facebook.com/TheBritannia/" target="_blank">Facebook</a> </div>
+            <div class="footer-navigation bottom-0 end-0"> <!-- A small navigation bar is created here, complete with links for each option to their corresponding HTML file. The 'a href' feature allows this functionality -->
+              <a href="homepage.html">Home</a> | 
+              <a href="menu.html">Menu</a> | 
+              <a href="rooms.html">Rooms</a> | 
+              <a href="local-area.html">Local area</a> | 
               <a href="contact-us.html">Contact us</a>
-            </div>
-            <div class="footer-text-left bottom-0 start-0"> The Britannia Inn <br> Manor Road <br> Alcombe <br> Somerset
-              <br> TA24 6EH </div>
-            <div class="footer-text-right bottom-0 end-0"> Designed by Will Young <br> Photography by Alfred Images
-              <br> Copyright © 2019 The Britannia Inn </div>
-            <div class="footer-text-midleft bottom-0"> Tel: 01643702384 <br> Email: thebritanniaminehead@yahoo.com
-              <br><a href="https://www.facebook.com/TheBritannia/" target="_blank">Facebook</a> </div>
-          </footer>
+          </div>
         </div>
       </div>
-    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
