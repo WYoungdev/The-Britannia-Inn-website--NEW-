@@ -457,3 +457,31 @@ img {
 }
 
 /* ================================================================================================================== */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/* =============================================== Dark Mode styling =============================================== */
+/* class for dark mode */
+.dark-mode {
+  background: #333333; /* Changes to the dark background color */
+  color: #ffffff; /* Changes to the dark text color */
+}
+
+/* inverts the navbar colors in dark mode */
+.dark-mode .nav-pills .nav-link,
+.dark-mode .nav-pills .nav-link.active {
+  color: #ffffff;
+}
+
+.dark-mode .nav-pills .nav-link:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* inverts the footer colors in dark mode */
+.dark-mode .footer-text-left,
+.dark-mode .footer-text-right,
+.dark-mode .footer-text-midleft,
+.dark-mode .footer-navigation {
+  color: #ffffff;
+}
+/* ================================================================================================================= */
