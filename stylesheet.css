@@ -1,7 +1,8 @@
 /* =============================================== Background image =============================================== */
 /*This is the styling for the background image on the website */
 body {
-    background: url('https://i.ibb.co/pyghD7n/Britannia-inn-background-img-blurred-1-edited.jpg') no-repeat center center fixed;
+    background: url('https://i.ibb.co/pyghD7n/Britannia-inn-background-img-blurred-1-edited.jpg') no-repeat center center fixed; /* Selects the background image to be used on the website. Ensures that it does not repeat when scrolling
+    Which the user should not be able to do anyway */
     /*The following code ensures that the background is responsive on all browsers */
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -14,7 +15,7 @@ body {
 /* This is the styling for the overall navigation bar */
 .nav-pills {
     display: flex; /* Places the navigation bar in a flex box */
-    justify-content: flex-end; /* Aligns the flex box to the right (end) of the webpage */
+    justify-content: flex-end; /* Aligns the flex box to the right 'end' of the webpage */
     margin-top: 1%; /* Adds an upper margin to the overall navigation bar to push the element down */
   }
   /* This is the styling for each navigation button */
@@ -34,16 +35,16 @@ body {
   .nav-pills .nav-link:hover {
     color: #000000; /* Sets the nav text to black when hovered */
     background-color: #D3D3D3; /* Sets the button background to grey when hovered */
-    padding: 0.5rem rem; /* Maintains button padding */
+    padding: 0.5rem rem; /* Sets button padding to maintain padding */
     border-radius: 10%; /* Adds rounding to each button when hovered */
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds slight shadowing to each button when hovered */
   }
   /* This is the styling for navigation button that is active */
   .nav-pills .nav-link.active {
-    background-color: rgba(211, 211, 211, 0.5); /* Sets the background color for the current page */
-    color: #000000; /* Sets the text color for the current page */
-    border-radius: 10%; /* Adds rounding to the current page's button */
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds shadow to the current page's button */
+    background-color: rgba(211, 211, 211, 0.5); /* Sets the button background color for the current page button */
+    color: #000000; /* Sets the text color for the current page button */
+    border-radius: 10%; /* Adds rounding to the current page button */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds shadow to the current page button */
   }
 /* ================================================================================================================ */
 
@@ -53,7 +54,7 @@ body {
   font-family: Kaisei Tokumin; /* Sets the font type */
   font-size: 4.5vw; /* Sets the font size */
   color: #ffffff; /* Sets the font colour */
-  text-align: start; /* Aligns the text to the left side of the page */
+  text-align: start; /* Aligns the text to the left side of the page or 'start' */
   text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
 }
 /* ================================================================================================================ */
@@ -71,297 +72,295 @@ body {
 /* ================================================ The menu button ================================================ */
 /*This is the styling for the 'View Menu' button' */
 .btn-outline-secondary {
-  position: relative;
+  position: relative; /* Sets the position setting of the button to relative */
   background-color: transparent; /* Sets button background to transparent */
   font-family: Kaisei Tokumin; /* Sets the font type */
   font-size: 1.7rem; /* Sets the font size */
   color: #ffffff; /* Sets the font colour */
-  outline: 0.2vw solid white; /* Sets a responsive outline to white */
-  text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
+  outline: 0.2vw solid white; /* Sets a responsive outline with white colour */
+  text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 }
-/*This is the styling for the 'View Menu' button' when hovered on */
+/*This is the styling for the 'View Menu' button' when hovered */
 .btn-outline-secondary:hover {
   background-color: #D3D3D3; /* Sets the button background to grey when hovered on */
-  font-family: Kaisei Tokumin; /* Sets the font type */
+  font-family: Kaisei Tokumin; /* Maintains the font type */
   color: #000000; /* Sets the font colour to black when hovered on */
 }
 /* ================================================================================================================= */
 
 /* ============================================== Opening times heading ============================================== */
 .opening-time-header{
-  font-family: Kaisei Tokumin;
-  font-size: 3vw;
-  color: #ffffff;
-  margin-top: 1%;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  text-align: end;
-  margin-top: -40%;
-  margin-right: 35%;
+  font-family: Kaisei Tokumin; /* Sets the font type */
+  font-size: 3vw; /* Sets the font size */
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  text-align: end; /* Aligns the text to the right side, or 'end' */
+  margin-top: -40%; /* Adds a negative upper margin to bring the element up */
+  margin-right: 35%; /* Adds a right margin to push the element away from the right side of the page */
 }
 /* ==================================================================================================================== */
 
 /* ============================================= Opening times subheading  ============================================= */
 .opening-times-paragraph{
-  font-family: Kaisei Tokumin;
-  font-size: 1.5vw;
-  color: #ffffff;
-  margin-top: 1%;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  text-align: end;
-  margin-right: 35%;
+  font-family: Kaisei Tokumin; /* Sets the font type */
+  font-size: 1.5vw; /* Sets the font size */
+  color: #ffffff; /* Sets the font colour */
+  margin-top: 1%; /* Adds an upper margin, bring the element down from the header above */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  text-align: end; /* Aligns the text to the right side, or 'end' */
+  margin-right: 35%; /* Adds a right margin to push the element away from the right side of the page */
 }
 /* ===================================================================================================================== */
 
 /* ================================================ Offwhite background ================================================ */
 /* This is the styling for the off white background for all pages. */
 .page-background {
-  position: absolute;
-  top: 11%;
-  left: 0;
-  width: 100%;
-  height: 76vh;
-  background-color: #eee9d9;
-  z-index: -1;
+  position: absolute; /* Sets the position to absolute */
+  top: 11%; /* Adds a top margin to allow space for the navigation bar */
+  left: 0; /* Sets the element to sit on the left side, ensuring that there is no gap for default padding */
+  width: 100%; /* Sets the element width to 100%, ensuring that it always covers the entire width of the page */
+  height: 76vh; /* Sets the height */
+  background-color: #eee9d9; /* Sets the background colour */
+  z-index: -1; /* Sets the Z index to -1 so that the element ALWAYS sits behind all other elements */
 }
 /* ================================================================================================================= */
 
 /* ============================================== The Menu food image ============================================== */
 /* This is the styling for the menu food image */
 .menu-image {
-  box-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  width: 41.5%;
-  max-width: 70%;
-  margin-left: 3%;
-  margin-top: 11%;
-  border-radius: 1.5%;
+  box-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  width: 41.5%; /* Sets the width of the element */
+  max-width: 70%; /* Sets the maximum width of the element */
+  margin-left: 3%; /* Adds a left margin to push the element away from the left side of the webpage */
+  margin-top: 11%; /* Adds a top margin to push the element away from the top of the webpage */
+  border-radius: 1.5%; /* Adds rounding to the corners of the element */
 }
 /* ================================================================================================================= */
 
 /* ================================================ The Menu heading ================================================ */
 /* This is the styling for the menu heading */
 .menu-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  color: #000000;
-  font-family: Italiana;
-  font-size: 3.3vw;
-  margin-top: 5%;
-  margin-left: -5%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  color: #000000; /* Sets the text colour */
+  font-family: Italiana; /* Sets the text font */
+  font-size: 3.3vw; /* Sets the text size */
+  margin-top: 5%; /* Adds a top margin for positioning */
+  margin-left: -5%; /* Adds a negative left margin for positioning */
 }
 /* ================================================================================================================== */
 
 /* =============================================== The Mains heading =============================================== */
 /* This is the styling for the mains heading */
 .mains-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  color: #000000;
-  font-family: Italiana;
-  font-size: 2.5vw;
-  margin-top: -4%;
-  margin-left: -10.5%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  color: #000000; /* Sets the text colour */
+  font-family: Italiana; /* Sets the text font */
+  font-size: 2.5vw; /* Sets the text size */
+  margin-top: -4%; /* Adds a negative top margin for positioning */
+  margin-left: -10.5%; /* Adds a negative left margin for positioning */
 }
 /* ================================================================================================================= */
 
 /* ============================================== The Desserts heading ============================================== */
 /* This is the styling for the desserts heading */
 .desserts-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  color: #000000;
-  font-family: Italiana;
-  font-size: 2.5vw;
-  margin-top: -80%;
-  margin-left: -215%;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  color: #000000; /* Sets the text colour */
+  font-family: Italiana; /* Sets the text font */
+  font-size: 2.5vw; /* Sets the font size */
+  margin-top: -80%; /* Adds a negative top margin for positioning */
+  margin-left: -215%; /* Adds a negative left margin for positioning */
 }
 /* ================================================================================================================== */
 
 /* ================================================ The Mains options =============================================== */
 /* This is the styling for the mains options */
 .mains-options {
-  list-style-type: none;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  font-family: Jacques Francois;
+  list-style-type: none; /* Adds a type to the list. In this case, no type must be specified */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  font-family: Jacques Francois; /* Sets the text font */
 }
 .mains-options li {
-  margin-bottom: 2%;
-  position: relative;
+  margin-bottom: 2%; /* Adds a bottom margin to the list options for positioning */
+  position: relative; /* Sets the position to relative */
 }
 .mains-options h6 {
-  font-size: 1.9rem;
+  font-size: 1.9rem; /* Sets the font size for the h6 values in the list */
 }
 .mains-options p {
-  font-size: 1rem;
+  font-size: 1rem; /* Sets the font size for p values in the list */
 }
 .mains-price {
-  font-family: Jacques Francois;
-  font-weight: bold;
-  font-size: 1.2rem;
-  position: absolute;
-  margin-left: 50%;
-  top: 10%;
+  font-family: Jacques Francois; /* Sets the text font */
+  font-weight: bold; /* Sets the text to bold */
+  font-size: 1.2rem; /* Sets the text size */
+  position: absolute; /* Sets the position to absolute */
+  margin-left: 50%; /* Adds a left margin for positioning */
+  top: 10%; /* Adds a top margin for positioning */
 }
 /* ================================================================================================================== */
 
 /* =============================================== The Desserts options ============================================== */
 /* This is the styling for the Desserts options */
 .desserts-options {
-  list-style-type: none;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  margin-top: -3%;
-  font-family: Jacques Francois;
-  margin-top: -102%;
-  margin-left: 30%;
+  list-style-type: none; /* Adds a type to the list. In this case, no type must be specified */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  font-family: Jacques Francois; /* Sets the text font */
+  margin-top: -102%; /* Adds a negative top margin for positioning */
+  margin-left: 30%; /* Adds a left margin for positioning */
 }
 .desserts-options li {
-  margin-bottom: 2%;
-  position: relative;
+  margin-bottom: 2%; /* Adds a bottom margin to list items for positioning */
+  position: relative; /* Sets the position to relative */
 }
 .desserts-options h6 {
-  font-size: 1.9rem;
+  font-size: 1.9rem; /* Sets the text size for all h6 values in the list */
   white-space: nowrap; /* Adds the nowrap rule to prevent text from covering multiple lines */
 }
 .desserts-options p {
-  font-size: 1rem;
+  font-size: 1rem; /* Sets the text size for all p values in the list */
 }
 .desserts-price {
-  font-family: Jacques Francois;
-  font-weight: bold;
-  font-size: 1.2rem;
-  position: absolute;
-  margin-left: 150%;
-  top: 10%;
+  font-family: Jacques Francois; /* Sets the text font */
+  font-weight: bold; /* Sets the text to bold */
+  font-size: 1.2rem; /* Sets the text size */
+  position: absolute; /* Sets the position to absolute */
+  margin-left: 150%; /* Adds a left margin for positioning */
+  top: 10%; /* Anchors the text to the top by 10% for positioning */
 }
 /* =================================================================================================================== */
 
 /* ============================================= The Accomodation heading ============================================ */
 /* This is the styling for the accomodation heading */
 .accommodation-header {
-font-family: Kaisei Tokumin;
-font-size: 3vw;
-margin-top: 1%;
-text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+font-family: Kaisei Tokumin; /* Sets the text font */
+font-size: 3vw; /* Sets the text size */
+margin-top: 1%; /* Adds a 1% margin to the top for positioning */
+text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 /* =================================================================================================================== */
 
 /* =============================================== The Accomodation text ============================================== */
 /* This is the styling for the accomodation paragraph */
 .accommodation-paragraph {
-  font-family: Kaisei Tokumin;
-  font-size: 1.2vw;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 1.2vw; /* Sets the text size */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 /* ==================================================================================================================== */
 
 /* ================================================= Room service text ================================================ */
 /* This is the styling for the room service text */
 .room-service-paragraph {
-  font-family: Kaisei Tokumin;
-  font-size: 1.2vw;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  margin-top: -1%;
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 1.2vw; /* Sets the font size */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  margin-top: -1%; /* Adds a top margin for positioning */
 }
 /* ==================================================================================================================== */
 
 /* ================================================ Room images and text =============================================== */
 /* This is the styling for the room images and accompanying headers and subtitles */
 .room-images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Places the images in a flex box */
+  flex-direction: column; /* Sets the flex direction */
+  align-items: center; /* Aligns the element to the center of the flex box */
 }
 .image-title {
-  font-size: 2vw;
-  margin-bottom: 0.5vh;
-  font-family: Kaisei Tokumin;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  font-size: 2vw; /* Sets the text size */
+  margin-bottom: 0.5vh; /* Adds a bottom margin for positioning */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 .image-subtitle {
-  font-size: 1.4vw;
-  margin-top: 0.5vh;
-  font-family: Kaisei Tokumin;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  font-size: 1.4vw; /* Sets the text size */
+  margin-top: 0.5vh; /* Adds a top margin for positioning */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 img {
-  width: 80%;
-  height: auto;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 1.5%;
+  width: 80%; /* Sets the image width */
+  height: auto; /* Sets the height to match the width value, ensuring aspect ratio is maintained */
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds drop shadow to the images */
+  border-radius: 1.5%; /* Rounds the corners of the images */
 }
 /* ===================================================================================================================== */
 
 /* ============================================= The Local Area heading ============================================ */
 /* This is the styling for the local area heading */
 .local-area-header {
-  font-family: Kaisei Tokumin;
-  font-size: 3vw;
-  margin-top: 1%;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 3vw; /* Sets the text size */
+  margin-top: 1%; /* Adds a top margin for positioning */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   }
 /* =================================================================================================================== */
 
 /* ================================================== Local area text ================================================= */
 /* This is the styling for the local area text */
 .local-area-paragraph {
-  font-family: Kaisei Tokumin;
-  font-size: 1.2vw;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 1.2vw; /* Sets the text size */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 /* ==================================================================================================================== */
 
 /* ================================================= Local area images ================================================ */
 /* This is the styling for the local area images */
 .local-area-images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Places the images in a flex box */
+  flex-direction: column; /* Sets the direction of the flex box */
+  align-items: center; /* Aligns the images to the center of the flex box */
 }
 .local-image-title {
-  font-size: 2vw;
-  margin-bottom: 0.5vh;
-  font-family: Kaisei Tokumin;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  font-size: 2vw; /* Sets the text size */
+  margin-bottom: 0.5vh; /* Adds a bottom margin for positioning */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 .local-image-subtitle {
-  font-size: 1.4vw;
-  margin-top: 0.5vh;
-  font-family: Kaisei Tokumin;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  font-size: 1.4vw; /* Sets the text size */
+  margin-top: 0.5vh; /* Adds a top margin for positioning */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 img {
-  width: 80%;
-  height: auto;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 1.5%;
+  width: 80%; /* Sets the width of the images */
+  height: auto; /* Sets the height to change according to the width to maintain the aspect ratio of the images */
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds drop shadow */
+  border-radius: 1.5%; /* Rounds the corners of the images */
 }
 /* ==================================================================================================================== */
 
 /* ================================================= Contact headings ================================================= */
 /* This is the styling for the contact headings */
 .contact-left-heading {
-  left: 0;
-  margin-left: 6%;
-  position: absolute;
-  top: 0;
-  font-family: Kaisei Tokumin;
-  font-size: 3vw;
-  margin-top: 5.5%;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  left: 0; /* Anchors the heading to the left side of the webpage */
+  margin-left: 6%; /* Adds a left margin for positioning */
+  position: absolute; /* Sets the position setting to absolute for this element */
+  top: 0; /* Anchors the heading to the top side of the webpage */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 3vw; /* Sets the text size */
+  margin-top: 5.5%; /* Adds a top margin for positioning */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 .contact-right-heading {
-  right: 0;
-  margin-right: 6%;
-  position: absolute;
-  top: 0;
-  font-family: Kaisei Tokumin;
-  font-size: 3vw;
-  margin-top: 5.5%;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  right: 0; /* Anchors the heading to the right side of the webpage */
+  margin-right: 6%; /* Adds a right margin for positioning */
+  position: absolute; /* Sets the position setting to absolute */
+  top: 0; /* Anchors the heading to the top side of the webpage */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 3vw; /* Sets the text size */
+  margin-top: 5.5%; /* Adds a top margin for positioning */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 .britannia-subheadings {
-  right: 0;
-  margin-right: 6%;
-  margin-top: 6%;
-  text-align: right;
-  position: absolute;
-  font-size: 1.8rem;
+  right: 0; /* Anchors the subheading to the right side of the webpage */
+  margin-right: 6%; /* Adds a right margin for positioning */
+  margin-top: 6%; /* Adds a top margin for positioning */
+  text-align: right; /* Aligns the text to the right side of its container */
+  position: absolute; /* Sets the position setting to absolute */
+  font-size: 1.8rem; /* Sets the text size */
 }
 
 /* ==================================================================================================================== */
@@ -369,35 +368,35 @@ img {
 /* =============================================== Contact form styling =============================================== */
 /* This is the styling for the contact form */
 .form-container {
-  width: 40%; /* Adjusts overall width of the form */
-  margin-left: 6%; /* Adjusts the margin to the left of the entire form */
-  padding-top: 5%; /* Moves the entire form downwards on the page */
+  width: 40%; /* Sets the overall width of the form */
+  margin-left: 6%; /* Sets the margin to the left of the entire form for positioning */
+  padding-top: 5%; /* Adds padding to the top of the entire form for positioning */
 }
 .form-container .form-group {
   margin-bottom: 2%; /* Adjusts the spacing between each field in the form */
 }
 .form-container label {
-  font-family: Kaisei Tokumin; /* Adjusts form label font type */
-  font-size: 2.8vh;
+  font-family: Kaisei Tokumin; /* Sets the form label text font */
+  font-size: 2.8vh; /* Sets the text size of the form labels */
 }
 .form-container .form-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Adds the form rows to a flex box */
+  flex-wrap: wrap; /* Adds wrap to the flex box to prevent the boxes from continuing onto the next line when the limit of it's container is reached */
   margin-right: -1%; /* Adjusts the right margin of the First/Last name fields */
   margin-left: -1%; /* Adjusts the left margin of the First/Last name fields */
 }
 .form-container .form-row .col {
   padding-right: 1%; /* Adjusts the space between First and Last name sections */
-  padding-left: 1%; /* ,,, */
+  padding-left: 1%; /* Adjusts the padding to the left of the first and last name sections */
 }
+/* The following three lines of CSS set the placeholder labels for each of the form fields */
 .form-container input[type="text"],
 .form-container input[type="email"],
 .form-container input[type="tel"] {
   width: 100%; /* Adjusts the width of the field boxes */
   padding: 2px; /* Adjusts the padding of the field boxes */
-  box-sizing: border-box;
+  box-sizing: border-box; /* Sets the sizing of each field box */
 }
-/* Adjusts the size of the placeholder font */
 .form-container input::placeholder,
 .form-container textarea::placeholder {
   font-size: 2.8vh; /* Adjusts the size of the placeholder font */
@@ -405,96 +404,96 @@ img {
 .form-container textarea {
   width: 100%; /* Adjusts the width of the text box for questions */
   padding: 2px; /* Adjusts the padding of the text box for questions */
-  box-sizing: border-box;
+  box-sizing: border-box; /* Sets the sizing of the questions box */
   resize: vertical;
-  height: 100px; /* Adjusts the height of the text box for questions */
+  height: 100px; /* Adjusts the height of the questions box */
 }
-.form-container button[type="submit"] {
-  width: 20%;
-  margin-top: 2%;
-  background-color: transparent;
-  color: #000000;
-  border-color: #000000;
+.form-container button[type="submit"] { /* Adds the 'submit' label to the submit button */
+  width: 20%; /* Sets the submit button width */
+  margin-top: 2%; /* Adds a top margin to the button for positioning */
+  background-color: transparent; /* Sets the background of the submit button to transparent */
+  color: #000000; /* Sets the text colour for the submit button */
+  border-color: #000000; /* Sets the border colour for the submit box */
   transition: background-color 0.3s ease; /* Adds a transition for smooth hover effect */
 }
 /* Adjusts the hover behavior for the submit button */
 .form-container button[type="submit"]:hover {
   background-color: #000000; /* Changes the background color on hover */
   color: #ffffff; /* Changes the text color on hover */
-  border-color: #000000;
+  border-color: #000000; /* Sets the button border colour when hovered */
 }
 /* ==================================================================================================================== */
 
 /* ============================================== Interactive Google map ============================================== */
 /* This is the styling for the interactive google map */
 #map {
-  height: 800h;
-  width: 80vh;
-  margin-top: -20%;
-  margin-right: 5%;
+  width: 80vh; /* Sets the width of the interactive map. The default height is appropriate and does not need adjustment as it follows the width */
+  margin-top: -20%; /* Adds a negative top margin to the map for positioning */
+  margin-right: 5%; /* Adds a right margin to the map for positioning */
 }
 .map-container {
-  display: flex;
-  justify-content: flex-end; /* Aligns the map to the right side */
-  margin-right: 0%; /* Adds spacing to the right side of the map */
+  display: flex; /* Sets the map container to be a flex box */
+  justify-content: flex-end; /* Aligns the map to the right side of the flex box */
+  margin-right: 0%; /* Adds a right margin to the map container for positioning */
 }
 /* ==================================================================================================================== */
 
 /* =================================================== The Footer =================================================== */
 /* This is the styling for the footer background */
 .footer {
-  width: 100%;
-  height: 12.6vh;
+  width: 100%; /* Sets the footer size. This is set to 100% so that the footer always spans the entire width of the screen */
+  height: 12.6vh; /* Sets the height of the footer so that it does not interfere with page content */
 }
-/* This is the styling for the footer text */
+/* This is the styling for all footer text */
 .footer-text-left,
 .footer-text-right,
 .footer-text-midleft {
-  font-size: 0.80vw;
-  position: absolute;
-  color: white;
-  text-align: left;
-  text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4);
+  font-size: 0.80vw; /* Sets the text size */
+  position: absolute; /* Sets the position setting to absolute */
+  color: white; /* Sets the text colour to white */
+  text-align: left; /* Aligns all of the above elements to the left side of the footer */
+  text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 .footer-text-midleft {
-  padding: 1.5vh 1.5vh 0vh 0vh;
+  padding: 1.5vh 1.5vh 0vh 0vh; /* Adds padding to the middle left footer text for positioning */
 }
 .footer-navigation {
-  font-size: 0.80vw;
-  position: absolute;
-  color: white;
-  text-align: left;
-  text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4);
-  margin-right: 15%;
+  font-size: 0.80vw; /* Sets the text size of the footer navigation options */
+  position: absolute; /* Sets the position setting to absolute */
+  color: white; /* Sets the text colour to white */
+  text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  margin-right: 15%; /* Adds a right margin for positioning */
 }
 
 /* ================================================================================================================== */
 /* ================================================================================================================== */
 /* ================================================================================================================== */
 /* ================================================ Dark Mode styling ================================================ */
-/* class for dark mode */
+/* class for the dark mode button */
 /* Adjusts the size of the Dark Mode button */
 .btn-sm {
   font-size: 0.8rem;
   padding: 0.2rem 0.8rem;
 }
 /* ========================================= Dark Mode styling for homepage ========================================= */
-/* inverts the navbar colors in dark mode */
+/* inverts the navbar colors of previous elements for dark mode */
+/* All of the 'body#homepage elements are specific only to the homepage body, and no other pages. This has been done because the homepage is styled differently
+to the other webpages to enhance first impressions. Doing so makes the dark mode behave differently, as colours cannot simply be inverted alone */
 body#homepage.dark-mode .nav-pills .nav-link,
 body#homepage.dark-mode .nav-pills .nav-link.active {
-  color: #000000;
+  color: #000000; /* Sets the font colour of all buttons in the navigation bar, including the active button/tab */
 }
 body#homepage.dark-mode .nav-pills .nav-link:hover {
-  background-color: #333333;
-  color: #000000;
+  background-color: #333333; /* Sets the button background colour on hover */
+  color: #000000; /* Sets the button font colour */
 }
 /* inverts the footer colors in dark mode */
 body#homepage.dark-mode .footer-text-left,
 body#homepage.dark-mode .footer-text-right,
 body#homepage.dark-mode .footer-text-midleft,
 body#homepage.dark-mode .footer-navigation {
-  color: #000000;
-  text-shadow: 0vw 0vw 0vw rgba(0, 0, 0, 0.4);
+  color: #000000; /* Sets the font colour */
+  text-shadow: 0vw 0vw 0vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 body#homepage.dark-mode .britannia-header {
   color: #000000; /* Sets the font colour */
@@ -510,15 +509,20 @@ body#homepage.dark-mode .btn-outline-secondary {
 body#homepage.dark-mode .btn-outline-secondary:hover {
   background-color: #000000; /* Sets the button background to grey when hovered on */
   font-family: Kaisei Tokumin; /* Sets the font type */
-  color: #ffffff; /* Sets the font colour to black when hovered on */
+  color: #ffffff; /* Sets the font colour to white when hovered on */
 }
 body#homepage.dark-mode .opening-time-header {
-  color: #000000;
+  color: #000000; /* Sets the font colour */
 }
 body#homepage.dark-mode .opening-times-paragraph {
-  color: #000000;
+  color: #000000; /* Sets the font colour */
 }
 /* This is the dark mode styling for the background image on the homepage ONLY */
+/* For the dark mode setting, a different background image has been used, which is effectively identical to the original background image, but
+with a lighter filter and adjusted brightness, contrast and exposure to make the image appear brighter. This was a more simplified approach than
+using the filter method in code, as this did not interact properly with the image */
+/* The responsiveness CSS remains the same as the previous background image, but must be applied below to the new image to maintain responsiveness
+across different browsers */
 body#homepage.dark-mode {
   background: url('https://i.ibb.co/WksHxnv/Britannia-background-brighter.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -532,143 +536,110 @@ body#homepage.dark-mode {
 /* ================================================= Dark Mode Menu ================================================= */
 /* This is the styling for the off white background for all pages. */
 .dark-mode .page-background {
-  background-color: #2b2b2b;
+  background-color: #2b2b2b; /* Sets the background colour for dark mode */
 }
 /* This is the styling for the menu heading */
 .dark-mode .menu-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
+  color: #ffffff; /* Sets the font colour */
 }
 /* This is the styling for the mains heading */
 .dark-mode .mains-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
+  color: #ffffff; /* Sets the font colour */
 }
 /* This is the styling for the desserts heading */
 .dark-mode .desserts-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
+  color: #ffffff; /* Sets the font colour */
 }
 /* This is the styling for the mains options */
 .dark-mode .mains-options {
-  color: #ffffff;
+  color: #ffffff; /* Sets the font colour */
 }
 /* This is the styling for the mains options */
 .dark-mode .desserts-options {
-  color: #ffffff;
+  color: #ffffff; /* Sets the font colour */
 }
 /* ================================================================================================================== */
 /* ================================================ Dark Mode Rooms ================================================ */
 /* This is the styling for the accomodation heading */
 .dark-mode .accommodation-header {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
   }
 /* This is the styling for the accomodation paragraph */
 .dark-mode .accommodation-paragraph {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
   }
 /* This is the styling for the room service text */
 .dark-mode .room-service-paragraph {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 /* This is the styling for the room images and accompanying headers and subtitles */
 
 .dark-mode .image-title {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 .dark-mode .image-subtitle {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 /* ================================================================================================================= */
 /* ============================================== Dark Mode Local area ============================================== */
 /* This is the styling for the local area heading */
 .dark-mode .local-area-header {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
   }
 /* This is the styling for the local area text */
 .dark-mode .local-area-paragraph {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 /* This is the styling for the local area image text */
 .dark-mode .local-image-title {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 .dark-mode .local-image-subtitle {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 /* ================================================================================================================== */
 /* ============================================== Dark Mode Contact us ============================================== */
 /* ================================================= Contact headings ================================================= */
 /* This is the styling for the contact headings */
-.contact-left-heading {
-  left: 0;
-  margin-left: 6%;
-  position: absolute;
-  top: 0;
-  font-family: Kaisei Tokumin;
-  font-size: 3vw;
-  margin-top: 5.5%;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+.dark-mode .contact-left-heading {
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
-.contact-right-heading {
-  right: 0;
-  margin-right: 6%;
-  position: absolute;
-  top: 0;
-  font-family: Kaisei Tokumin;
-  font-size: 3vw;
-  margin-top: 5.5%;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
+.dark-mode .contact-right-heading {
+  color: #ffffff; /* Sets the font colour */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
-.britannia-subheadings {
-  right: 0;
-  margin-right: 6%;
-  margin-top: 6%;
-  text-align: right;
-  position: absolute;
-  font-size: 1.8rem;
+.dark-mode .britannia-subheadings {
+  color: #ffffff; /* Sets the font colour */
 }
-
 /* ==================================================================================================================== */
 
 /* =============================================== Contact form styling =============================================== */
 /* This is the styling for the contact form */
 .dark-mode .form-container label {
-  color: #ffffff;
+  color: #ffffff; /* Sets the font colour for the form labels*/
 }
 .dark-mode .form-container button[type="submit"] {
-  width: 20%;
-  margin-top: 2%;
-  background-color: transparent;
-  color: #ffffff;
-  border-color: #ffffff;
+  background-color: transparent; /* Maintains the transparent button background in dark mode */
+  color: #ffffff; /* Sets the font colour for the submit button */
+  border-color: #ffffff; /* Sets the button border colour to white for dark mode */
 }
 /* Adjusts the hover behavior for the submit button */
 .dark-mode .form-container button[type="submit"]:hover {
   background-color: #ffffff; /* Changes the background color on hover */
   color: #000000; /* Changes the text color on hover */
-  border-color: #ffffff;
-}
-/* This is the styling for the contact headings */
-.dark-mode .contact-left-heading {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-}
-.dark-mode .contact-right-heading {
-  color: #ffffff;
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4);
-}
-.dark-mode .britannia-subheadings {
-  color: #ffffff;
+  border-color: #ffffff; /* Sets the button border colour to white for dark mode on hover */
 }
 /* ================================================================================================================== */
-/* This is the styling for  */
