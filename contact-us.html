@@ -21,21 +21,20 @@
   <header>
     <!-- Light/Dark mode button with positioning-->
     <button class="btn btn-dark btn-sm dark-mode-button position-absolute top-0 end-0 m-2" onclick="toggleDarkMode()">Light/Dark Mode</button>
-    <!-- Navigation bar using bootstrap grid system-->
-    <!-- Each navigation bar button is linked to the corresponding .html file using 'a href'-->
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12"> <!-- Medium sized columns are used within the bootstrap grid here so that the navigation bar positioning could be better positioned -->
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="homepage.html" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-              <li class="nav-item"><a href="rooms.html" class="nav-link">Rooms</a></li>
-              <li class="nav-item"><a href="local-area.html" class="nav-link">Local area</a></li>
-              <li class="nav-item"><a href="contact-us.html" class="nav-link active" aria-current="page">Contact us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <!-- Navigation bar -->
+    <!-- Each of the navigation options were named and linked to their corresponding HTML files so that the navigation bar functions -->
+    <!-- A navigation bar toggle button was added that corresponds with the Javascript function to show/hide the navigation bar when clicked 'onclick' -->
+    <!-- The current navigation option for the page the user is on, is added to it's own 'active' class for targeting in CSS with different styling -->
+    <nav class="navbar">
+      <ul class="navbar-links" id="navbarLinks">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="local-area.html">Local Area</a></li>
+        <li><a href="contact-us.html"class="active">Contact Us</a></li>
+      </ul>
+      <button class="navbar-toggler" onclick="toggleNav()">☰</button>
+    </nav>
   </header>
   <main>
     <!-- place page content here -->
