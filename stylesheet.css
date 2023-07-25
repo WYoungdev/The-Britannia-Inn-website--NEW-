@@ -16,7 +16,7 @@ body {
 .navbar {
   display: flex; /* Places the navigation bar in a flex box for easier positioning */
   justify-content: flex-end; /* Positions all of the flex box content to the right side */
-  padding: 2.5rem 2rem 1.5rem 4rem; /* Adds padding to the entire navigation bar for positioning */
+  padding: 2rem 2rem 1.5rem 4rem; /* Adds padding to the entire navigation bar for positioning */
 }
 /* This is the styling for the navigation toggle button */
 /* Due to the toggle button being a text symbol in the HTML, font modifiers such as 'font-size' apply to this element */
@@ -409,7 +409,7 @@ img {
 .britannia-subheadings {
   right: 0; /* Anchors the subheading to the right side of the webpage */
   margin-right: 6%; /* Adds a right margin for positioning */
-  margin-top: 6%; /* Adds a top margin for positioning */
+  margin-top: 4%; /* Adds a top margin for positioning */
   text-align: right; /* Aligns the text to the right side of its container */
   position: absolute; /* Sets the position setting to absolute */
   font-size: 1.8rem; /* Sets the text size */
