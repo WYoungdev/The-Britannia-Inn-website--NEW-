@@ -35,29 +35,19 @@
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (max-width: 768px) {
-/* Change the display to stack elements vertically */
-.nav-pills {
-  flex-direction: column;
-  align-items: flex-start; /* Aligns the elements to the left of the screen */
-}
+  /* Change the flex-direction to column to display the menu vertically */
+  .nav-pills {
+    flex-direction: column;
+    align-items: flex-start; /* Aligns the menu items to the right when displayed vertically */
+  }
 
-/* Reset the margin for stacked elements */
-.nav-pills .nav-link {
-  margin-top: 0;
-  margin-right: 0;
-}
-
-/* Add spacing between stacked elements */
-.nav-pills .nav-link:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-/* Additional styles for smartphone layout */
-.nav-pills .nav-link:nth-child(3),
-.nav-pills .nav-link:nth-child(4) {
-  /* Display the third and fourth options as blocks, stacked vertically */
-  display: block;
-  margin-right: 0; /* Remove the right margin to align with the first two options */
-}
+  /* Adjust the margin and spacing for vertical layout */
+  .nav-pills .nav-link {
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 5%; /* Add bottom margin to separate each button */
+    color: #ffffff; /* Sets the nav text colour to white */
+    font-family: Kaisei Tokumin; /* Sets the nav text font */
+    font-size: 7vw; /* Sets the nav text font size */
+  }
 }
 /* ================================================================================================================ */

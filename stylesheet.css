@@ -13,40 +13,90 @@ body {
 
 /* ================================================ Navigation bar ================================================ */
 /* This is the styling for the overall navigation bar */
-.nav-pills {
-    display: flex; /* Places the navigation bar in a flex box */
-    justify-content: flex-end; /* Aligns the flex box to the right 'end' of the webpage */
-    margin-top: 1%; /* Adds an upper margin to the overall navigation bar to push the element down */
-  }
-  /* This is the styling for each navigation button */
-  .nav-pills .nav-link {
-    color: #ffffff; /* Sets the nav text colour to white */
-    font-family: Kaisei Tokumin; /* Sets the nav text font */
-    font-size: 1.7vw; /* Sets the nav text font size */
-    margin-top: 3.75%; /* Adds a responsive top margin to each button */
-    margin-right: 5%; /* Changes the spacing between each button */
-    text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to all nav text */
-    border: 1px solid transparent; /* Adds a transparent border to prevent other buttons from moving when hovering */
-    padding: 0.5rem 1rem; /* Adjusts the padding to compensate for the added border */
-    transition: all 0.3s ease; /* Adds a smooth transition effect to each button */
-    white-space: nowrap; /* Prevents text from wrapping */
-  }
-  /* This is the styling for navigation buttons when hovered */
-  .nav-pills .nav-link:hover {
-    color: #000000; /* Sets the nav text to black when hovered */
-    background-color: #D3D3D3; /* Sets the button background to grey when hovered */
-    padding: 0.5rem rem; /* Sets button padding to maintain padding */
-    border-radius: 10%; /* Adds rounding to each button when hovered */
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds slight shadowing to each button when hovered */
-  }
-  /* This is the styling for navigation button that is active */
-  .nav-pills .nav-link.active {
-    background-color: rgba(211, 211, 211, 0.5); /* Sets the button background color for the current page button */
-    color: #000000; /* Sets the text color for the current page button */
-    border-radius: 10%; /* Adds rounding to the current page button */
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds shadow to the current page button */
-  }
+.navbar {
+  display: flex; /* Places the navigation bar in a flex box for easier positioning */
+  justify-content: flex-end; /* Positions all of the flex box content to the right side */
+  padding: 2.5rem 2rem 1.5rem 4rem; /* Adds padding to the entire navigation bar for positioning */
+}
+/* This is the styling for the navigation toggle button */
+/* Due to the toggle button being a text symbol in the HTML, font modifiers such as 'font-size' apply to this element */
+.navbar-toggler {
+  font-size: 2.5rem; /* This resizes the toggle button */
+  border: none; /* This removes any border from the toggle button */
+  background: none; /* This removes any background from the toggle button */
+  color: white; /* This makes the toggle button white */
+  cursor: pointer; /* This changes the cursor when hovering over the toggle button, making the button appear clickable to the user */
+  padding: 1rem; /* This adds padding for positioning */
+  outline: 0; /* This removes any outline from the toggle button */
+}
+/* This is the styling for all of the links in the navigation bar */
+.navbar-links {
+  list-style: none; /* Sets the list type to 'none', ensuring that no bullet points are shown for the list of links */
+  margin: 0; /* Forces the default margin to 0 for positioning */
+  padding: 0; /* Forces the default padding to 0 for positioning */
+  display: flex; /* Places the links in a flex box of their own */
+  margin-right: 2rem; /* Adds a right margin to the links for positioning in the navigation bar */
+}
+/* This is the styling for the list within the navigation bar */
+.navbar-links li {
+  margin-left: 2rem; /* Adds a left margin to the list of links above, for further positioning */
+}
+/* This is the styling for each of the navigation options */
+.navbar-links li a {
+  color: white; /* Sets the colour to white for all navigation options */
+  text-decoration: none; /* Forces no text decoration, ensuring that a white line is not shown below each navigation option */
+  padding: 1rem 2rem; /* Adds padding to each navigation option for spacing between other options */
+  font-size: 2rem; /* Adjusts the font size */
+  text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to all nav text */
+}
+/* This is the styling for each of the navigation options when hovered */
+.navbar-links li a:hover {
+  background-color: #525252; /* Adds a background colour when the option is hovered */
+  color: #fff; /* Sets the colour of the option to white when hovered */
+  border-radius: 0.5rem; /* Adds corner rounding to the navigation options when hovered */
+}
+
+/* This is the styling for the currently active tab */
+.navbar-links li a.active {
+  background-color: #5252528c; /* Adds a slightly transparent grey background to the active tab */
+  color: #fff; /* Keeps the consistent white font for the active tab */
+  border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab */
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Collapsible navigation on smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .navbar-links li {
+    margin: 0;
+  }
+
+  .navbar-links li a { /* This is the styling for the navigation bar text options */
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .navbar-links li a:hover {
+    background-color: transparent;
+  }
+
+  .navbar-links li:last-child a {
+    border-bottom: none;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+}
 
 /* ================================================================================================================ */
 
@@ -477,6 +527,13 @@ img {
   font-size: 0.8rem;
   padding: 0.2rem 0.8rem;
 }
+
+.dark-mode-button {
+  position: fixed;
+  top: 0;
+  left: 0; /* Adjust this value to set the distance from the left edge */
+}
+
 /* ========================================= Dark Mode styling for homepage ========================================= */
 /* inverts the navbar colors of previous elements for dark mode */
 /* All of the 'body#homepage elements are specific only to the homepage body, and no other pages. This has been done because the homepage is styled differently
