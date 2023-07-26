@@ -218,7 +218,13 @@ body {
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
+@media (max-width: 768px) {
+  .page-background {
+    position: fixed; /* Change the position to fixed for mobile devices */
+    top: 11%; /* Adjust the top position to create a small gap at the top */
+    height: 100%; /* Adjust the height to 100% for mobile devices to cover the full height of the screen */
+  }
+}
 /* ================================================================================================================= */
 
 /* ============================================== The Menu food image ============================================== */
