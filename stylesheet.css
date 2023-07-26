@@ -822,14 +822,11 @@ text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 /* This is the styling for the room images and accompanying headers and subtitles */
-
-.dark-mode .image-title {
+.dark-mode .rooms-title {
   color: #ffffff; /* Sets the font colour */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
-.dark-mode .image-subtitle {
+.dark-mode .rooms-description {
   color: #ffffff; /* Sets the font colour */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 /* ================================================================================================================= */
 /* ============================================== Dark Mode Local area ============================================== */
@@ -844,13 +841,11 @@ text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 /* This is the styling for the local area image text */
-.dark-mode .local-image-title {
+.dark-mode .local-title {
   color: #ffffff; /* Sets the font colour */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
-.dark-mode .local-image-subtitle {
+.dark-mode .local-description {
   color: #ffffff; /* Sets the font colour */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
 }
 /* ================================================================================================================== */
 /* ============================================== Dark Mode Contact us ============================================== */
