@@ -529,10 +529,16 @@ img {
 }
 
 .dark-mode-button {
-  position: fixed;
+  /* Remove the 'position: fixed;' rule and set 'position: absolute;' */
+  position: absolute;
+  /* Keep 'top: 0;' to position it at the top of the screen */
   top: 0;
-  left: 0; /* Adjust this value to set the distance from the left edge */
+  /* Change 'left: 0;' to 'right: 0;' to position it at the top-right corner */
+  right: 0;
+  /* Add z-index to ensure it appears above other elements */
+  z-index: 999;
 }
+
 
 /* ========================================= Dark Mode styling for homepage ========================================= */
 /* inverts the navbar colors of previous elements for dark mode */

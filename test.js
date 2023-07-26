@@ -8,3 +8,16 @@ for (var i = 0; i < navLinks.length; i++) { //This starts a for-loop that iterat
     this.classList.add("active"); //This readds the 'active' class to whichever navigation option the user clicked, applying the 'active' class styling to that option and showing the user which webpage they are currently on.
   }); //Ends the listener.
 }
+
+
+
+
+
+//This is the function to enable the dark mode button to function.
+function toggleDarkMode() {
+  // Get the <body> element
+  const body = document.body;
+
+  // Toggle the 'dark-mode' class on the body
+  body.classList.toggle('dark-mode');
+}

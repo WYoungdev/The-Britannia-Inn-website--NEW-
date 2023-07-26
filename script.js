@@ -1,9 +1,8 @@
-//This is the function to enable the dark mode button to function.
+//This is the function to enable functionality of the darkmode button.
 function toggleDarkMode() {
-  // Get the <body> element
-  const body = document.body;
-
-  // Toggle the 'dark-mode' class on the body
+  // Selects the <body> element.
+  const body = document.body;``
+  // Toggles the 'dark-mode' class on the body of the webpage, enabling the altered style settings in the CSS.
   body.classList.toggle('dark-mode');
 }
 
