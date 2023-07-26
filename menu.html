@@ -55,7 +55,8 @@
         </div>
       </div>
     </div>
-  <!-- Creating the Menu heading, using the bootstrap grid system and an empty div before the header class to push the header into the latter 5 columns of the webpage -->
+  <!-- Creating the Menu heading, using the bootstrap grid system to position the menu header. All 12 columns were used to make positioning the header on the line easy with no other elements
+  interfering with the positioning -->
 <h1 class="container">
   <div class="row">
     <div class="col-12">
@@ -63,14 +64,9 @@
     </div>
   </div>
 </h1>
-  <!-- Creating the Mains heading and using the bootstrap grid system and an empty div before the header class to push the header into the latter 6 columns of the webpage  -->
-
-
-  <!-- Creating the Desserts heading and using the bootstrap grid system and an empty div before the header class to push the header into the last column of the webpage-->
-
-<!-- Creating the Mains options and using the bootstrap grid system and an empty div before the header class to push the header into the latter 7 columns of the webpage.
-Here, the 'li' tag was used to add the mains items to a list, which would position each of the options underneath eachother. H6 tags were used to add predefined styling, and then
-the 'p' tag was used for the smaller comments for each of the mains items. Price was then added next to each item using the 'span' tag to add a gap between the item and it's price -->
+<!-- Both the mains and desserts were bulked into a single menu to make CSS styling easier, particularly in the case of mobile devices. Each menu item was given a title, description
+and price, all of which were contained within a single menu container that could be targeted in CSS. Designing the menu this way allowed for the mains and desserts to be easily
+placed next to eachother and positioned on the page evenly using the bootstrap grid system and two size 6 medium columns to make up the full 12 column total -->
 <div id="menu-container" class="container">
   <div class="row">
     <div class="col-md-6">
