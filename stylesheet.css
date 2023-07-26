@@ -66,7 +66,7 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* Collapsible navigation on smaller screens */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -116,7 +116,7 @@ body {
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .britannia-header {
   font-size: 15vw; /* Change the font size for mobile devices to 7% of the viewport width */
   text-align: center; /* Center the text in the middle of the page */
@@ -134,7 +134,7 @@ body {
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .britannia-paragraph {
   font-size: 6.5vw; /* Change the font size for mobile devices to 7% of the viewport width */
   text-align: center; /* Center the text in the middle of the page */
@@ -161,7 +161,7 @@ body {
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .btn-outline-secondary {
     display: block;
     margin: auto;
@@ -216,6 +216,9 @@ body {
   background-color: #eee9d9; /* Sets the background colour */
   z-index: -1; /* Sets the Z index to -1 so that the element ALWAYS sits behind all other elements */
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 /* ================================================================================================================= */
 
 /* ============================================== The Menu food image ============================================== */
@@ -228,6 +231,13 @@ body {
   margin-top: 11%; /* Adds a top margin to push the element away from the top of the webpage */
   border-radius: 1.5%; /* Adds rounding to the corners of the element */
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 767px) {
+  .menu-image {
+    display: none;
+  }
+}
 /* ================================================================================================================= */
 
 /* ================================================ The Menu heading ================================================ */
@@ -237,8 +247,16 @@ body {
   color: #000000; /* Sets the text colour */
   font-family: Italiana; /* Sets the text font */
   font-size: 3.3vw; /* Sets the text size */
-  margin-top: 5%; /* Adds a top margin for positioning */
-  margin-left: -5%; /* Adds a negative left margin for positioning */
+  margin-left: 60%; /* Adds a negative left margin for positioning */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 767px) {
+  .menu-header {
+    font-size: 4rem; /* Change the font size for mobile devices */
+    margin: 0 auto; /* Center the menu header horizontally */
+    text-align: center;
+  }
 }
 /* ================================================================================================================== */
 
