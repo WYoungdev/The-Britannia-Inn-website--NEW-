@@ -267,8 +267,18 @@ body {
   color: #000000; /* Sets the text colour */
   font-family: Italiana; /* Sets the text font */
   font-size: 2.5vw; /* Sets the text size */
-  margin-top: -4%; /* Adds a negative top margin for positioning */
-  margin-left: -10.5%; /* Adds a negative left margin for positioning */
+  margin-top: 1%; /* Adds a negative top margin for positioning */
+  margin-left: 45%; /* Adds a negative left margin for positioning */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 767px) {
+  .mains-header {
+    font-size: 3rem; /* Change the font size for mobile devices */
+    margin: 0 auto; /* Center the menu header horizontally */
+    text-align: center;
+    margin-top: 8%;
+  }
 }
 /* ================================================================================================================= */
 
