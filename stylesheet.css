@@ -247,7 +247,7 @@ body {
   color: #000000; /* Sets the text colour */
   font-family: Italiana; /* Sets the text font */
   font-size: 3.3vw; /* Sets the text size */
-  margin-left: 60%; /* Adds a negative left margin for positioning */
+  margin-left: 75%; /* Adds a left margin for positioning */
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
