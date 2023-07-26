@@ -351,6 +351,13 @@ font-size: 3vw; /* Sets the text size */
 margin-top: 1%; /* Adds a 1% margin to the top for positioning */
 text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+  .accommodation-header {
+    font-size: 3.5rem; /* Adjusts the font size for mobile devices */
+  }
+}
 /* =================================================================================================================== */
 
 /* =============================================== The Accomodation text ============================================== */
@@ -359,6 +366,14 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   font-family: Kaisei Tokumin; /* Sets the text font */
   font-size: 1.2vw; /* Sets the text size */
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+  .accommodation-paragraph {
+    font-size: 1.7rem; /* Adjusts the font size for mobile devices */
+    margin-bottom: 10%; /* Adds a bottom margin to the accomodation paragraph, spacing it from the text below it, for mobile devices */
+  }
 }
 /* ==================================================================================================================== */
 
@@ -370,33 +385,51 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   margin-top: -1%; /* Adds a top margin for positioning */
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+  .room-service-paragraph {
+    font-size: 1.7rem; /* Adjusts the font size for mobile devices */
+    margin-bottom: 10%; /* Adds a bottom margin to the room service paragraph, spacing it from the text below it, for mobile devices */
+  }
+}
 /* ==================================================================================================================== */
 
 /* ================================================ Room images and text =============================================== */
 /* This is the styling for the room images and accompanying headers and subtitles */
-.room-images {
-  display: flex; /* Places the images in a flex box */
-  flex-direction: column; /* Sets the flex direction */
-  align-items: center; /* Aligns the element to the center of the flex box */
+.rooms-gallery {
+  display: flex;
+  justify-content: center;
 }
-.image-title {
-  font-size: 2vw; /* Sets the text size */
-  margin-bottom: 0.5vh; /* Adds a bottom margin for positioning */
-  font-family: Kaisei Tokumin; /* Sets the text font */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+
+.rooms-images {
+  text-align: center;
+  margin: 20px;
 }
-.image-subtitle {
-  font-size: 1.4vw; /* Sets the text size */
-  margin-top: 0.5vh; /* Adds a top margin for positioning */
-  font-family: Kaisei Tokumin; /* Sets the text font */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+
+.rooms-images img {
+  width: 300px; /* adjust the image width as needed */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-img {
-  width: 80%; /* Sets the image width */
-  height: auto; /* Sets the height to match the width value, ensuring aspect ratio is maintained */
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds drop shadow to the images */
-  border-radius: 1.5%; /* Rounds the corners of the images */
+
+.rooms-title {
+  font-size: 20px;
+  margin: 10px 0;
 }
+
+.rooms-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .rooms-gallery {
+    flex-direction: column;
+  }
+}
+
 /* ===================================================================================================================== */
 
 /* ============================================= The Local Area heading ============================================ */

@@ -142,3 +142,53 @@
 .dark-mode .menu-item-price {
   color: #ffffff;
 }
+
+
+
+
+
+/* ================================================ Room images and text =============================================== */
+/* This is the styling for the room images and accompanying headers and subtitles */
+.room-images {
+  display: flex; /* Places the images in a flex box */
+  flex-direction: column; /* Sets the flex direction */
+  align-items: center; /* Aligns the element to the center of the flex box */
+}
+.image-title {
+  font-size: 2vw; /* Sets the text size */
+  margin-bottom: 0.5vh; /* Adds a bottom margin for positioning */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+}
+.image-subtitle {
+  font-size: 1.4vw; /* Sets the text size */
+  margin-top: 0.5vh; /* Adds a top margin for positioning */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+}
+img {
+  width: 80%; /* Sets the image width */
+  height: auto; /* Sets the height to match the width value, ensuring aspect ratio is maintained */
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds drop shadow to the images */
+  border-radius: 1.5%; /* Rounds the corners of the images */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+  .room-images {
+    flex-direction: column; /* Change flex direction to stack elements vertically */
+    align-items: center; /* Center elements horizontally within the flex box */
+  }
+  .image-title {
+    font-size: 5vw; /* Adjust the text size to 5vw for mobile devices */
+    margin-bottom: 1vh; /* Add space between the title and subtitle */
+  }
+  .image-subtitle {
+    font-size: 3.5vw; /* Adjust the text size to 3.5vw for mobile devices */
+    margin-top: 1vh; /* Add space between the subtitle and the image */
+  }
+  img {
+    width: 80%; /* Adjust the image width to 80% for mobile devices */
+    border-radius: 1.5%; /* Maintain rounded corners */
+  }
+}
