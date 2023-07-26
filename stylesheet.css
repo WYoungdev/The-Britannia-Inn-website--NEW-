@@ -374,6 +374,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   .accommodation-paragraph {
     font-size: 1.7rem; /* Adjusts the font size for mobile devices */
     margin-bottom: 10%; /* Adds a bottom margin to the accomodation paragraph, spacing it from the text below it, for mobile devices */
+    text-shadow: none; /* Removes the drop shadow for mobile users */
   }
 }
 /* ==================================================================================================================== */
@@ -392,6 +393,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   .room-service-paragraph {
     font-size: 1.7rem; /* Adjusts the font size for mobile devices */
     margin-bottom: 10%; /* Adds a bottom margin to the room service paragraph, spacing it from the text below it, for mobile devices */
+    text-shadow: none; /* Removes the drop shadow for mobile users */
   }
 }
 /* ==================================================================================================================== */
@@ -445,6 +447,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   }
   .rooms-description {
     font-size: 1.3rem; /* adjusts the font size for mobile users */
+    text-shadow: none; /* Removes the drop shadow for mobile users */
   }
 }
 /* ===================================================================================================================== */
@@ -462,7 +465,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 @media (max-width: 768px) {
   .local-area-header {
     font-size: 3.5rem; /* Adjusts the font size for mobile devices */
-    margin-bottom: 10%;
+    margin-bottom: 10%; /* Adds a margin to the bottom of the local area header, spacing it out from other elements */
   }
 }
 /* =================================================================================================================== */
@@ -480,6 +483,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   .local-area-paragraph {
     font-size: 1.7rem; /* Adjusts the font size for mobile devices */
     margin-bottom: 10%; /* Adds a bottom margin to the accomodation paragraph, spacing it from the text below it, for mobile devices */
+    text-shadow: none; /* Removes the drop shadow for mobile users */
   }
 }
 /* ==================================================================================================================== */
@@ -509,7 +513,6 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 .local-description {
   font-size: 1.3rem; /* adjusts the font size of the image descriptions */
   font-family: Kaisei Tokumin; /* Sets the text font */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   margin-bottom: 10%; /* Adds a bottom margin to space the description from what is below it, primarily for mobile devices */
 }
 
