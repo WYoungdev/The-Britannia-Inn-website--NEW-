@@ -521,36 +521,31 @@ img {
 /* ================================================================================================================== */
 /* ================================================================================================================== */
 /* ================================================ Dark Mode styling ================================================ */
-/* class for the dark mode button */
-/* Adjusts the size of the Dark Mode button */
+/* This is the styling for the dark mode toggle button */
 .btn-sm {
-  font-size: 0.8rem;
-  padding: 0.2rem 0.8rem;
+  font-size: 0.8rem; /* Adjusts the size of the Dark Mode button. As the actual icon for the dark mode button is a text element, font modifiers apply to it */
+  padding: 0.2rem 0.8rem; /* Adjusts the padding of the Dark Mode button for positioning */
 }
-
 .dark-mode-button {
-  /* Remove the 'position: fixed;' rule and set 'position: absolute;' */
-  position: absolute;
-  /* Keep 'top: 0;' to position it at the top of the screen */
-  top: 0;
-  /* Change 'left: 0;' to 'right: 0;' to position it at the top-right corner */
-  right: 0;
-  /* Add z-index to ensure it appears above other elements */
-  z-index: 999;
+  position: absolute; /* Sets the button position to absolute */
+  top: 0; /* Forces the top margin to 0, keeping the button at the top of the screen */
+  right: 0; /* Forces the right margin to 0, keeping the button on the left of the screen */
+  z-index: 999; /* Sets the button to always draw over the top of other elements, to ensure it is always above the background */
 }
-
-
 /* ========================================= Dark Mode styling for homepage ========================================= */
 /* inverts the navbar colors of previous elements for dark mode */
 /* All of the 'body#homepage elements are specific only to the homepage body, and no other pages. This has been done because the homepage is styled differently
 to the other webpages to enhance first impressions. Doing so makes the dark mode behave differently, as colours cannot simply be inverted alone */
-body#homepage.dark-mode .nav-pills .nav-link,
-body#homepage.dark-mode .nav-pills .nav-link.active {
-  color: #000000; /* Sets the font colour of all buttons in the navigation bar, including the active button/tab */
+/* This is the styling for the darkmode navigation bar for ONLY the homepage. */
+/* inverts the navigation bar colors in dark mode and removes text shadow to make the navigation options more readable */
+body#homepage.dark-mode .navbar-links li a,
+body#homepage.dark-mode .navbar-toggler {
+  color: black;
+  text-shadow: none;
 }
-body#homepage.dark-mode .nav-pills .nav-link:hover {
-  background-color: #333333; /* Sets the button background colour on hover */
-  color: #000000; /* Sets the button font colour */
+body#homepage.dark-mode .navbar-links li a.active {
+  background-color: #0000008c;
+  color: #ffffff;
 }
 /* inverts the footer colors in dark mode */
 body#homepage.dark-mode .footer-text-left,
