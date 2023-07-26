@@ -23,5 +23,5 @@ function toggleNav() {
   document.addEventListener("DOMContentLoaded", function () { //This line listens for if the DOM content is loaded.
     if (window.location.pathname === "/") { //If the above listener is true, the callback function is run and then if the window location returns the root of the website, '/', which is the homepage,
       document.body.classList.add("homepage"); //the homepage class is added to the classlist of the body, allowing for different styling to be added to the body, which contains the homepage, that does not apply to
-    } //other webpages. This is why the "homepage" class is in the body on the homepage HTML.
+    } //other webpages. This is why the "homepage" class is in the body on the homepage HTML, but not on any other webpages.
   });
