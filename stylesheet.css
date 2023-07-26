@@ -696,7 +696,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
     font-size: 1em; /* Sets the font size */
     text-align: center; /* Aligns the text to the center of the page horizontally */
     position: static; /* Sets the footer as static so that it does not move when the page is scrolled */
-    text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+    text-shadow: none; /* Removes the drop shadow from the text, as the text will already be black for these pages and the shadow makes the text appear blurry */
     margin: auto; /* Centers the footer as a whole */
     color: black; /* Sets the text color to black */
   }
