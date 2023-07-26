@@ -69,3 +69,50 @@
     justify-content: center;
   }
 }
+
+
+
+
+.desserts-header {
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  color: #000000; /* Sets the text colour */
+  font-family: Italiana; /* Sets the text font */
+  font-size: 2.5vw; /* Sets the font size */
+  margin-top: -80%; /* Adds a negative top margin for positioning */
+  margin-left: -215%; /* Adds a negative left margin for positioning */
+}
+
+
+
+
+
+.mains-header {
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  color: #000000; /* Sets the text colour */
+  font-family: Italiana; /* Sets the text font */
+  font-size: 2.5vw; /* Sets the text size */
+  margin-top: 1%; /* Adds a negative top margin for positioning */
+  margin-left: 45%; /* Adds a negative left margin for positioning */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 767px) {
+  .mains-header {
+    font-size: 3rem; /* Change the font size for mobile devices */
+    margin: 0 auto; /* Center the menu header horizontally */
+    text-align: center;
+    margin-top: 8%;
+  }
+}
+
+
+
+
+.desserts-header {
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  color: #000000; /* Sets the text colour */
+  font-family: Italiana; /* Sets the text font */
+  font-size: 2.5vw; /* Sets the font size */
+  margin-top: -80%; /* Adds a negative top margin for positioning */
+  margin-left: -215%; /* Adds a negative left margin for positioning */
+}

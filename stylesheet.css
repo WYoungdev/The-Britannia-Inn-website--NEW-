@@ -260,46 +260,24 @@ body {
 }
 /* ================================================================================================================== */
 
-/* =============================================== The Mains heading =============================================== */
-/* This is the styling for the mains heading */
-.mains-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
-  color: #000000; /* Sets the text colour */
-  font-family: Italiana; /* Sets the text font */
-  font-size: 2.5vw; /* Sets the text size */
-  margin-top: 1%; /* Adds a negative top margin for positioning */
-  margin-left: 45%; /* Adds a negative left margin for positioning */
-}
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media (max-width: 767px) {
-  .mains-header {
-    font-size: 3rem; /* Change the font size for mobile devices */
-    margin: 0 auto; /* Center the menu header horizontally */
-    text-align: center;
-    margin-top: 8%;
-  }
-}
-/* ================================================================================================================= */
-
 /* ============================================== The Desserts heading ============================================== */
 /* This is the styling for the desserts heading */
-.desserts-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
-  color: #000000; /* Sets the text colour */
-  font-family: Italiana; /* Sets the text font */
-  font-size: 2.5vw; /* Sets the font size */
-  margin-top: -80%; /* Adds a negative top margin for positioning */
-  margin-left: -215%; /* Adds a negative left margin for positioning */
-}
+
 /* ================================================================================================================== */
 
 /* ================================================ The Mains options =============================================== */
-/* This is the styling for the mains options */
+/* This is the styling for the mains heading and options */
+.mains-header {
+  font-size: 4rem;
+  font-family: Italiana;
+  margin-left: 45%;
+  margin-bottom: 3%;
+}
 .mains-options {
   list-style-type: none; /* Adds a type to the list. In this case, no type must be specified */
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   font-family: Jacques Francois; /* Sets the text font */
+  margin-left: 43%;
 }
 .mains-options li {
   margin-bottom: 2%; /* Adds a bottom margin to the list options for positioning */
@@ -323,6 +301,10 @@ body {
 
 /* =============================================== The Desserts options ============================================== */
 /* This is the styling for the Desserts options */
+.desserts-header {
+  font-size: 4rem;
+  font-family: Italiana;
+}
 .desserts-options {
   list-style-type: none; /* Adds a type to the list. In this case, no type must be specified */
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
