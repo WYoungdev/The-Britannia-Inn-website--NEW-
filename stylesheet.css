@@ -260,78 +260,51 @@ body {
 }
 /* ================================================================================================================== */
 
-/* ============================================== The Desserts heading ============================================== */
-/* This is the styling for the desserts heading */
-
-/* ================================================================================================================== */
-
-/* ================================================ The Mains options =============================================== */
-/* This is the styling for the mains heading and options */
-.mains-header {
-  font-size: 4rem;
-  font-family: Italiana;
-  margin-left: 45%;
-  margin-bottom: 3%;
+/* ================================================ The combined menu ================================================ */
+/* This is the styling for the combined menu */
+#menu-container {
+  max-width: 100%; /* Sets the menu to use 100% of its container */
+  margin: 0; /* Removes any default margins that may occur */
+  padding: 5% 2%; /* Adds padding to the menu for positioning */
+  float: right; /* Floats the menu to the right side */
+  width: 55%; /* Adjusts the width of the menu */
+  margin-top: -5%; /* Adds a negative margin to the top of the menu, moving the menu upwards slightly */
 }
-.mains-options {
-  list-style-type: none; /* Adds a type to the list. In this case, no type must be specified */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
-  font-family: Jacques Francois; /* Sets the text font */
-  margin-left: 43%;
+.menu-section {
+  border: 1px solid #000000; /* Adds a border around each section for looks */
+  padding: 5%; /* Adds padding between the menu options and the outer border */
+  margin-bottom: 5%; /* Adds spacing between each menu option */
 }
-.mains-options li {
-  margin-bottom: 2%; /* Adds a bottom margin to the list options for positioning */
-  position: relative; /* Sets the position to relative */
+.menu-section h3 {
+  font-size: 3em; /* Changes the main/dessert heading font size */
+  margin-bottom: 2%; /* Adds a margin below the headings, spacing them from the rest of the menu */
+  border-bottom: 1px solid #000000; /* Adds a border below the menu headings for looks */
+  padding-bottom: 2%; /* Adds further padding below the menu heading and the border line */
 }
-.mains-options h6 {
-  font-size: 1.9rem; /* Sets the font size for the h6 values in the list */
+.menu-item {
+  margin-bottom: 2%; /* Adds a space between each of the menu items */
+  border-bottom: 1px dashed #979797; /* Add a dashed line below each item for looks */
+  padding-bottom: 2%; /* Adds padding below each menu option to space the options out */
+  display: flex; /* Places the menu options in a flexbox to align them */
+  flex-wrap: wrap; /* Wraps items so that nothing goes onto a second line if the width is not large enough */
+  justify-content: space-between; /* Adds 'space-between' for the price of each menu option*/
 }
-.mains-options p {
-  font-size: 1rem; /* Sets the font size for p values in the list */
+.menu-item-title {
+  font-size: 1.5em; /* Controls the font size of each menu option */
+  font-weight: bold; /* Sets the font of each menu option to be bold */
+  flex-basis: 70%; /* Adjusts the width of each menu item to 70% of the available space in the flex box */
 }
-.mains-price {
-  font-family: Jacques Francois; /* Sets the text font */
-  font-weight: bold; /* Sets the text to bold */
-  font-size: 1.2rem; /* Sets the text size */
-  position: absolute; /* Sets the position to absolute */
-  margin-left: 50%; /* Adds a left margin for positioning */
-  top: 10%; /* Adds a top margin for positioning */
+.menu-item-desc {
+  font-size: 1.1em; /* Controls the font size for the description/additional text of each menu item */
+  margin-top: 2%; /* Adds a top margin, spacing the item description from it's corresponding item */
+  flex-basis: 80%; /* Adjusts the width of the description to 80% of the available space in the flex box */
 }
-/* ================================================================================================================== */
-
-/* =============================================== The Desserts options ============================================== */
-/* This is the styling for the Desserts options */
-.desserts-header {
-  font-size: 4rem;
-  font-family: Italiana;
+.menu-item-price {
+  font-size: 1.2em; /* Controls the font size for each item's pricing */
+  font-weight: bold; /* Sets the pricing of each menu item to bold */
+  flex-basis: 20%; /* Adjusts width of the pricing to 20% of the available space in the flex box */
 }
-.desserts-options {
-  list-style-type: none; /* Adds a type to the list. In this case, no type must be specified */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
-  font-family: Jacques Francois; /* Sets the text font */
-  margin-top: -102%; /* Adds a negative top margin for positioning */
-  margin-left: 30%; /* Adds a left margin for positioning */
-}
-.desserts-options li {
-  margin-bottom: 2%; /* Adds a bottom margin to list items for positioning */
-  position: relative; /* Sets the position to relative */
-}
-.desserts-options h6 {
-  font-size: 1.9rem; /* Sets the text size for all h6 values in the list */
-  white-space: nowrap; /* Adds the nowrap rule to prevent text from covering multiple lines */
-}
-.desserts-options p {
-  font-size: 1rem; /* Sets the text size for all p values in the list */
-}
-.desserts-price {
-  font-family: Jacques Francois; /* Sets the text font */
-  font-weight: bold; /* Sets the text to bold */
-  font-size: 1.2rem; /* Sets the text size */
-  position: absolute; /* Sets the position to absolute */
-  margin-left: 150%; /* Adds a left margin for positioning */
-  top: 10%; /* Anchors the text to the top by 10% for positioning */
-}
-/* =================================================================================================================== */
+/* ==================================================================================================================== */
 
 /* ============================================= The Accomodation heading ============================================ */
 /* This is the styling for the accomodation heading */
@@ -661,28 +634,25 @@ body#homepage.dark-mode {
 .dark-mode .page-background {
   background-color: #2b2b2b; /* Sets the background colour for dark mode */
 }
-/* This is the styling for the menu heading */
+/* This is the styling for the Menu heading */
+/* The following code changes the colour of all elements in the menu, including the menu heading to white, so that these elements correspond with dark mode */
 .dark-mode .menu-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
-  color: #ffffff; /* Sets the font colour */
+  color: #ffffff;
+  text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 }
-/* This is the styling for the mains heading */
-.dark-mode .mains-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
-  color: #ffffff; /* Sets the font colour */
+/* This is the styling for the dark mode combined menu */
+.dark-mode #menu-container {
+color: #ffffff;
+text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 }
-/* This is the styling for the desserts heading */
-.dark-mode .desserts-header {
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
-  color: #ffffff; /* Sets the font colour */
+.dark-mode .menu-section {
+  border: 1px solid #ffffff;
 }
-/* This is the styling for the mains options */
-.dark-mode .mains-options {
-  color: #ffffff; /* Sets the font colour */
+.dark-mode .menu-section h3 {
+  border-bottom: 1px solid #ffffff;
 }
-/* This is the styling for the mains options */
-.dark-mode .desserts-options {
-  color: #ffffff; /* Sets the font colour */
+.dark-mode .menu-item {
+  border-bottom: 1px dashed #ffffff;
 }
 /* ================================================================================================================== */
 /* ================================================ Dark Mode Rooms ================================================ */

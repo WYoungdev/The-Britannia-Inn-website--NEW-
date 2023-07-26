@@ -116,3 +116,29 @@
   margin-top: -80%; /* Adds a negative top margin for positioning */
   margin-left: -215%; /* Adds a negative left margin for positioning */
 }
+
+
+
+
+.dark-mode .menu-header {
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
+  color: #ffffff; /* Sets the font colour */
+}
+.dark-mode .menu-section {
+  border: 1px solid #ffffff; /* Adds a border around each section for looks */
+}
+.dark-mode .menu-section h3 {
+  border-bottom: 1px solid #ffffff; /* Adds a border below the menu headings for looks */
+}
+.dark-mode .menu-item {
+  border-bottom: 1px dashed #ffffff; /* Add a dashed line below each item for looks */
+}
+.dark-mode .menu-item-title {
+  color: #ffffff;
+}
+.dark-mode .menu-item-desc {
+  color: #ffffff;
+}
+.dark-mode .menu-item-price {
+  color: #ffffff;
+}

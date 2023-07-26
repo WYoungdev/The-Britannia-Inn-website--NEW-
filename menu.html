@@ -71,78 +71,77 @@
 <!-- Creating the Mains options and using the bootstrap grid system and an empty div before the header class to push the header into the latter 7 columns of the webpage.
 Here, the 'li' tag was used to add the mains items to a list, which would position each of the options underneath eachother. H6 tags were used to add predefined styling, and then
 the 'p' tag was used for the smaller comments for each of the mains items. Price was then added next to each item using the 'span' tag to add a gap between the item and it's price -->
-<div class="container">
+<div id="menu-container" class="container">
   <div class="row">
-    <div class="col-12">
-      <h2 class="mains-header">Mains</h2>
-      <ul class="mains-options">
-        <li>
-          <h6>Vegetable and lentil ragu</h6>
-          <p>Served with linguine (Vegan). Add parmesan if you fancy.</p>
-          <span class="mains-price">£8.99</span>
-        </li>
-        <li>
-          <h6>Wild mushroom risotto</h6>
-          <p>With truffle oil (Vegan). Feel free to add parmesan.</p>
-          <span class="mains-price">£9.99</span>
-        </li>
-        <li>
-          <h6>Paneer and chickpea dahl</h6>
-          <p>Marinated with Indian cheese, served with rice.</p>
-          <span class="mains-price">£7.99</span>
-        </li>
-        <li>
-          <h6>Rancho beef chilli</h6>
-          <p>With nachos and manchego cheese with salsa.</p>
-          <span class="mains-price">£10.99</span>
-        </li>
-        <li>
-          <h6>Homemade beef burger</h6>
-          <p>With chips. Add cheese (£1) and bacon (£2) if you fancy.</p>
-          <span class="mains-price">£12.99</span>
-        </li>
-      </ul>
+    <div class="col-md-6">
+      <!-- Mains Section -->
+      <div class="menu-section">
+        <h3>Mains</h3>
+        <div class="menu-item">
+          <div class="menu-item-title">Vegetable and lentil ragu</div>
+          <div class="menu-item-desc">(Served with vegan linguine. Add parmesan if you fancy.)</div>
+          <div class="menu-item-price">15.99</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">Wild mushroom risotto</div>
+          <div class="menu-item-desc">(With vegan truffle oil. Feel free to add parmesan.)</div>
+          <div class="menu-item-price">14.99</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">Paneer and chickpea dahl</div>
+          <div class="menu-item-desc">(Marinated with Indian cheese, served with rice.)</div>
+          <div class="menu-item-price">16.49</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">Rancho beef chilli</div>
+          <div class="menu-item-desc">(With nachos and manchego cheese and salsa)</div>
+          <div class="menu-item-price">18.99</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">Homemade beef burger</div>
+          <div class="menu-item-desc">(With chips. Add cheese and bacon if you fancy.)</div>
+          <div class="menu-item-price">12.99</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <!-- Desserts Section -->
+      <div class="menu-section">
+        <h3>Desserts</h3>
+        <div class="menu-item">
+          <div class="menu-item-title">Sticky toffee pudding</div>
+          <div class="menu-item-desc">(With clotted cream.)</div>
+          <div class="menu-item-price">7.99</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">Vanilla creme brulee</div>
+          <div class="menu-item-desc">(With shortbread.)</div>
+          <div class="menu-item-price">6.99</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">Chocolate brownie</div>
+          <div class="menu-item-desc">(With vanilla ice cream.)</div>
+          <div class="menu-item-price">8.49</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">Salted caramel cheesecake</div>
+          <div class="menu-item-desc">(With salted caramel ice cream)</div>
+          <div class="menu-item-price">9.99</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-title">Affogato</div>
+          <div class="menu-item-desc">(With vanilla ice cream, espresso & amaretto.)</div>
+          <div class="menu-item-price">6.99</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
   <!-- Creating the Desserts options. Here, the identical approach was taken as with the mains options, with the main difference being the actual text content used, and the bootstrap
   positioning used. While both use the grid system, the dessert options are in the latter 4 columns, pushed across by the preceeding empty div. This ensured that the desserts were
   positioned correctly on the page prior to CSS styling -->
-  <div class="container">
-    <div class="row">
-      <div class="col-8"></div>
-      <div class="col-4">
-        <h2 class="desserts-header">Desserts</h2>
-        <ul class="desserts-options">
-          <li>
-            <h6>Sticky toffee pudding</h6>
-            <p>With clotted cream.</p>
-            <span class="desserts-price">£6.99</span>
-          </li>
-          <li>
-            <h6>Vanilla creme brulee</h6>
-            <p>With shortbread.</p>
-            <span class="desserts-price">£5.99</span>
-          </li>
-          <li>
-            <h6>Chocolate brownie</h6>
-            <p>With vanilla ice cream.</p>
-            <span class="desserts-price">£7.49</span>
-          </li>
-          <li>
-            <h6>Salted caramel cheesecake</h6>
-            <p>With salted caramel ice cream.</p>
-            <span class="desserts-price">£6.99</span>
-          </li>
-          <li>
-            <h6>Affogatto</h6>
-            <p>With vanilla ice cream, espresso & amaretto.</p>
-            <span class="desserts-price">£7.50</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>  
+ 
 </main>
   <footer>
     <!-- Creating the footer, and positioning it using the bootstrap grid system -->
