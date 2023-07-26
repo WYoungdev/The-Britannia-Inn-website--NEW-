@@ -112,6 +112,14 @@ body {
   text-align: start; /* Aligns the text to the left side of the page or 'start' */
   text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media screen and (max-width: 768px) {
+  .britannia-header {
+  font-size: 15vw; /* Change the font size for mobile devices to 7% of the viewport width */
+  text-align: center; /* Center the text in the middle of the page */
+  }
+}
 /* ================================================================================================================ */
 
 /* ============================================ The Britannia Inn text ============================================ */
@@ -121,6 +129,14 @@ body {
   color: #ffffff; /* Sets the font colour */
   text-align: start; /* Aligns the text to the left side of the page */
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.5); /* Adds drop shadow to the heading */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media screen and (max-width: 768px) {
+  .britannia-paragraph {
+  font-size: 6.5vw; /* Change the font size for mobile devices to 7% of the viewport width */
+  text-align: center; /* Center the text in the middle of the page */
+  }
 }
 /* ================================================================================================================ */
 
@@ -140,6 +156,18 @@ body {
   background-color: #D3D3D3; /* Sets the button background to grey when hovered on */
   font-family: Kaisei Tokumin; /* Maintains the font type */
   color: #000000; /* Sets the font colour to black when hovered on */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media screen and (max-width: 768px) {
+  .btn-outline-secondary {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 1.8rem; /* Change the font size for mobile devices to 1.2rem */
+    width: 60%; /* Set the button width to 50% of the viewport width */
+    justify-content: center;
+  }
 }
 /* ================================================================================================================= */
 

@@ -59,3 +59,13 @@
 .navbar-toggler {
   font-size: 2.5rem; /* This resizes the toggle button */
 }
+
+
+@media screen and (max-width: 768px) {
+  .btn-outline-secondary {
+    text-align: center;
+    font-size: 1.2rem; /* Change the font size for mobile devices to 1.2rem */
+    width: 40%; /* Set the button width to 50% of the viewport width */
+    justify-content: center;
+  }
+}
