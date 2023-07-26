@@ -8,6 +8,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: auto; /*The overflow: auto code here enables scrolling. This is done primarily for mobile users where content doesn't fit on a single screen height */
     }
 /* ================================================================================================================ */
 
@@ -181,6 +182,14 @@ body {
   text-align: end; /* Aligns the text to the right side, or 'end' */
   margin-top: -40%; /* Adds a negative upper margin to bring the element up */
   margin-right: 35%; /* Adds a right margin to push the element away from the right side of the page */
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+  .opening-time-header {
+    text-align: center; /* Center the text horizontally */
+    margin: 0 auto; /* Center the element by setting left and right margins to auto */
+    margin-top: -20%; /* Adjust the top margin for better positioning on mobile */
+  }
 }
 /* ==================================================================================================================== */
 
@@ -549,6 +558,19 @@ img {
   margin-right: 15%; /* Adds a right margin for positioning */
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media screen and (max-width: 768px) {
+  .footer-text-left,
+  .footer-text-right,
+  .footer-text-midleft,
+  .footer-navigation {
+    font-size: 1em; /* Set the desired font size for mobile users */
+    text-align: center; /* Aligns the text to the center on mobile */
+    position: static; /* Resets the position to static for normal flow on mobile */
+    text-shadow: none; /* Removes the text shadow on mobile */
+    margin: auto;
+  }
+}
 /* ================================================================================================================== */
 /* ================================================================================================================== */
 /* ================================================================================================================== */
