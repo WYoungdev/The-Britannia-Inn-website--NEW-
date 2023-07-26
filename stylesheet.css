@@ -304,6 +304,37 @@ body {
   font-weight: bold; /* Sets the pricing of each menu item to bold */
   flex-basis: 20%; /* Adjusts width of the pricing to 20% of the available space in the flex box */
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+  #menu-container {
+    float: none; /* Removes the previous float setting for mobile users */
+    width: 100%; /* Sets the width to 100% to occupy the full width of the screen */
+    margin-top: 0; /* Resets the top default margin for mobile users */
+  }
+  .menu-section {
+    margin-bottom: 10%; /* Adjusts spacing between menu sections for mobile users */
+  }
+  .menu-item {
+    flex-direction: column; /* Displays all menu items vertically for mobile users */
+    align-items: flex-start; /* Aligns all items to the left for mobile users so that the items look good */
+  }
+  .menu-item-title {
+    font-size: 1.8em; /* Adjusts the font size of menu items for mobile users */
+    flex-basis: 100%; /* Sets the flex width  for the menu titles to 100% to occupy the full width of the screen */
+    margin-bottom: 5%; /* Adds a gap between menu items for mobile users so that the menu does not look cluttered */
+  }
+  .menu-item-desc {
+    font-size: 1.2em; /* Adjusts the font size of the item descriptions for mobile users */
+    flex-basis: 100%; /* Set the flex width to 100% to occupy the full width of the screen */
+    margin-bottom: 5%; /* Adds a gap between menu items and their descriptions for mobile users */
+  }
+  .menu-item-price {
+    font-size: 1.4em; /* Adjusts the font size of menu item prices for mobile users */
+    flex-basis: 100%; /* Sets the flex width to 100% to occupy the full width of the screen */
+    margin-bottom: 5%; /* Adds a gap between menu items and their prices for mobile users */
+  }
+}
 /* ==================================================================================================================== */
 
 /* ============================================= The Accomodation heading ============================================ */
