@@ -220,3 +220,48 @@ img {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5); /* Adds drop shadow */
   border-radius: 1.5%; /* Rounds the corners of the images */
 }
+
+
+
+
+
+
+/* This is the styling for the footer background */
+.footer {
+  width: 100%; /* Sets the footer size. This is set to 100% so that the footer always spans the entire width of the screen */
+  height: 12.6vh; /* Sets the height of the footer so that it does not interfere with page content */
+}
+/* This is the styling for all footer text */
+.footer-text-left,
+.footer-text-right,
+.footer-text-midleft {
+  font-size: 0.80vw; /* Sets the text size */
+  position: absolute; /* Sets the position setting to absolute */
+  color: white; /* Sets the text colour to white */
+  text-align: left; /* Aligns all of the above elements to the left side of the footer */
+  text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+}
+.footer-text-midleft {
+  padding: 1.5vh 1.5vh 0vh 0vh; /* Adds padding to the middle left footer text for positioning */
+}
+.footer-navigation {
+  font-size: 0.80vw; /* Sets the text size of the footer navigation options */
+  position: absolute; /* Sets the position setting to absolute */
+  color: white; /* Sets the text colour to white */
+  text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+  margin-right: 15%; /* Adds a right margin for positioning */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media screen and (max-width: 768px) {
+  .footer-text-left,
+  .footer-text-right,
+  .footer-text-midleft,
+  .footer-navigation {
+    font-size: 1em; /* Set the desired font size for mobile users */
+    text-align: center; /* Aligns the text to the center on mobile */
+    position: static; /* Resets the position to static for normal flow on mobile */
+    text-shadow: none; /* Removes the text shadow on mobile */
+    margin: auto;
+  }
+}

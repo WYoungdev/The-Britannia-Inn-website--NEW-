@@ -670,16 +670,35 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media screen and (max-width: 768px) {
-  .footer-text-left,
-  .footer-text-right,
-  .footer-text-midleft,
-  .footer-navigation {
-    font-size: 1em; /* Set the desired font size for mobile users */
-    text-align: center; /* Aligns the text to the center on mobile */
-    position: static; /* Resets the position to static for normal flow on mobile */
-    text-shadow: none; /* Removes the text shadow on mobile */
-    margin: auto;
+/* This is the styling for the footer of the homepage on mobile */
+/* This styling is specifically for the homepage class within the body */
+@media (max-width: 768px) {
+  .homepage .footer-text-left,
+  .homepage .footer-text-right,
+  .homepage .footer-text-midleft,
+  .homepage .footer-navigation {
+    font-size: 1em; /* Sets the font size */
+    text-align: center; /* Aligns the text to the center of the page horizontally */
+    position: static; /* Sets the footer as static so that it does not move when the page is scrolled */
+    text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+    margin: auto; /* Centers the footer as a whole */
+    color: white; /* Sets the text color to white for homepage on mobile */
+  }
+}
+
+/* This is the styling for non-homepage webpages on mobile */
+/* The body does not contain homepage in this case, so alternative styling below is applied */
+@media (max-width: 768px) {
+  body:not(.homepage) .footer-text-left,
+  body:not(.homepage) .footer-text-right,
+  body:not(.homepage) .footer-text-midleft,
+  body:not(.homepage) .footer-navigation {
+    font-size: 1em; /* Sets the font size */
+    text-align: center; /* Aligns the text to the center of the page horizontally */
+    position: static; /* Sets the footer as static so that it does not move when the page is scrolled */
+    text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+    margin: auto; /* Centers the footer as a whole */
+    color: black; /* Sets the text color to black */
   }
 }
 /* ================================================================================================================== */
