@@ -70,34 +70,37 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 55px;
-    right: 10px;
+    top: 5.5vh;
+    right: 8vh;
     z-index: 1;
+    background-color: #5252527a;
+    border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab */
+    align-items: center;
   }
-
   .navbar-links li {
     margin: 0;
+    padding: 0.2rem;
   }
-
-  .navbar-links li a { /* This is the styling for the navigation bar text options */
-    color: white;
+  .navbar-links li a {
     text-decoration: none;
-    padding: 10px;
+    padding: 1rem 2rem; /* Adjusted padding for more spacing between buttons on mobile */
   }
-
-  .navbar-links li a:hover {
-    background-color: transparent;
-  }
-
   .navbar-links li:last-child a {
     border-bottom: none;
   }
-
   .navbar-links.show {
     display: flex;
   }
+  .navbar-toggler {
+    font-size: 2rem; /* This resizes the toggle button */
+  }
+  .navbar-links li a.active {
+    background: none;
+    font-weight: bold;
+    color: #fff; /* Keeps the consistent white font for the active tab */
+    border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab */
+  }
 }
-
 /* ================================================================================================================ */
 
 /* ========================================== The Britannia Inn heading ========================================== */
