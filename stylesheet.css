@@ -879,17 +879,24 @@ text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 /* ============================================== Dark Mode Contact us ============================================== */
 /* ================================================= Contact headings ================================================= */
 /* This is the styling for the contact headings */
-.dark-mode .contact-left-heading {
-  color: #ffffff; /* Sets the font colour */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
+.dark-mode .contact-header {
+  color: #FFFFFF; /* Sets the font colour */
+  }
+/* This is the styling for the contact information text */
+.dark-mode .contact-paragraph {
+  color: #FFFFFF; /* Sets the font colour */
 }
-.dark-mode .contact-right-heading {
-  color: #ffffff; /* Sets the font colour */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
-}
-.dark-mode .britannia-subheadings {
-  color: #ffffff; /* Sets the font colour */
-}
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  @media (max-width: 768px) {
+    .dark-mode .contact-header {
+      color: #FFFFFF; /* Sets the font colour */
+    }
+  }
+  @media (max-width: 768px) {
+    .dark-mode .contact-paragraph {
+      color: #FFFFFF; /* Sets the font colour */
+    }
+  }
 /* ==================================================================================================================== */
 
 /* =============================================== Contact form styling =============================================== */
