@@ -163,47 +163,62 @@ body {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (max-width: 768px) {
   .btn-outline-secondary {
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    font-size: 1.8rem; /* Change the font size for mobile devices to 1.2rem */
-    width: 60%; /* Set the button width to 50% of the viewport width */
-    justify-content: center;
+    display: block; /* Sets the display type to block for centering the button */
+    margin: auto; /* Sets the margins to auto, to also center the button */
+    margin-top: 5%; /* Adds a top margin to bring the button down from the element above it */
+    margin-bottom: 20%; /* Adds a bottom margin to create a gap between the button and the element below it */
+    font-size: 1.8rem; /* Changes the font size */
+    width: 60%; /* Sets the button to consume 60% of the width of the page */
+    justify-content: center; /* Centers all of the content within the container */
   }
 }
 /* ================================================================================================================= */
 
-/* ============================================== Opening times heading ============================================== */
-.opening-time-header{
-  font-family: Kaisei Tokumin; /* Sets the font type */
-  font-size: 3vw; /* Sets the font size */
-  color: #ffffff; /* Sets the font colour */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
-  text-align: end; /* Aligns the text to the right side, or 'end' */
-  margin-top: -40%; /* Adds a negative upper margin to bring the element up */
-  margin-right: 35%; /* Adds a right margin to push the element away from the right side of the page */
+/* ============================================== Opening times headings ============================================== */
+.opening-times-container {
+  position: absolute; /* Sets the position setting to absolute */
+  top: 19%; /* Adds a top margin, moving the entire container down from the top of the page */
+  right: 20%; /* Adds a right margin, moving the entire container away from the right side of the page */
+  text-align: right; /* Aligns the text to the right side of the container */
 }
+.opening-heading-main {
+  font-size: 4rem; /* Sets the font size */
+  color: #ffffff; /* Sets the text colour to white */
+  text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
+}
+.opening-hours,
+.food-serving,
+.serving-hours {
+  font-size: 1.8rem; /* Sets the font size */
+  color: #ffffff; /* Sets the text colour to white */
+  text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (max-width: 768px) {
-  .opening-time-header {
-    text-align: center; /* Center the text horizontally */
-    margin: 0 auto; /* Center the element by setting left and right margins to auto */
-    margin-top: -20%; /* Adjust the top margin for better positioning on mobile */
+  .opening-times-container {
+    display: flex; /* Sets the container type to a flex container */
+    flex-direction: column; /* Aligns the contents of the container to appear vertically in a column */
+    justify-content: center; /* Aligns the content to the center of the webpage horizontally */
+    align-items: center; /* Aligns all of the container contents to the center of the container */
+    text-align: center; /* Centers all text within the container */
+    position: static; /* Resets the positioning of the container so that the flex box can override positioning */
+    margin-bottom: 20%; /* Gives the container a bottom margin to space it from the element below it, in this case, the footer */
+  }
+  .opening-heading-main {
+    font-size: 3rem; /* Adjusts the font size */
+    color: #ffffff; /* Adjusts the font colour */
+    text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
+  }
+  .opening-hours,
+  .food-serving,
+  .serving-hours {
+    font-size: 1.5rem; /* Adjusts the font size */
+    color: #ffffff; /* Adjusts the font colour */
+    text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
   }
 }
 /* ==================================================================================================================== */
-
-/* ============================================= Opening times subheading  ============================================= */
-.opening-times-paragraph{
-  font-family: Kaisei Tokumin; /* Sets the font type */
-  font-size: 1.5vw; /* Sets the font size */
-  color: #ffffff; /* Sets the font colour */
-  margin-top: 1%; /* Adds an upper margin, bring the element down from the header above */
-  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
-  text-align: end; /* Aligns the text to the right side, or 'end' */
-  margin-right: 35%; /* Adds a right margin to push the element away from the right side of the page */
-}
-/* ===================================================================================================================== */
 
 /* ================================================ Offwhite background ================================================ */
 /* This is the styling for the off white background for all pages. */

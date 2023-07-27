@@ -64,16 +64,13 @@
         </div>
       </div>
     </div>
-    <!-- Creating the opening times and food serving headings. Two column classes were used, one with a blank div so that the heading will be pushed into the other 6 columns available
-    with the bootstrap grid system. H1 was used to apply predefined styling to the Opening times header, and to tag it as a header for better readability of the code -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6">
-          <h1 class="opening-time-header">Opening times</h1>
-          <p class="opening-times-paragraph">Monday - Sunday <br> 15:00 - 23:00 <br> Serving food from <br> 15:00 - 22:00</p>
-        </div>
-      </div>
+    <!-- Creating the opening times and serving times headings. To do this, each was given it's own class that could be targeted for styling and sizing in CSS. Positioning in this case
+    is handled by using a flex box -->
+    <div class="opening-times-container">
+      <h class="opening-heading-main">Opening times</h>
+      <p class="opening-hours">Monday - Sunday 15:00 - 23:00</p>
+      <h1 class="food-serving">Serving food from</h1>
+      <p class="serving-hours">15:00 - 22:00</p>
     </div>
   </main>
   <footer>
