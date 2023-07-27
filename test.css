@@ -304,3 +304,33 @@ img {
     border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab */
   }
 }
+
+
+.contact-left-heading {
+  left: 0; /* Anchors the heading to the left side of the webpage */
+  margin-left: 6%; /* Adds a left margin for positioning */
+  position: absolute; /* Sets the position setting to absolute for this element */
+  top: 0; /* Anchors the heading to the top side of the webpage */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 3vw; /* Sets the text size */
+  margin-top: 5.5%; /* Adds a top margin for positioning */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+}
+.contact-right-heading {
+  right: 0; /* Anchors the heading to the right side of the webpage */
+  margin-right: 6%; /* Adds a right margin for positioning */
+  position: absolute; /* Sets the position setting to absolute */
+  top: 0; /* Anchors the heading to the top side of the webpage */
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 3vw; /* Sets the text size */
+  margin-top: 5.5%; /* Adds a top margin for positioning */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+}
+.britannia-subheadings {
+  right: 0; /* Anchors the subheading to the right side of the webpage */
+  margin-right: 6%; /* Adds a right margin for positioning */
+  margin-top: 4%; /* Adds a top margin for positioning */
+  text-align: right; /* Aligns the text to the right side of its container */
+  position: absolute; /* Sets the position setting to absolute */
+  font-size: 1.8rem; /* Sets the text size */
+}
