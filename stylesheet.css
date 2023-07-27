@@ -626,6 +626,33 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   color: #ffffff; /* Changes the text color on hover */
   border-color: #000000; /* Sets the button border colour when hovered */
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (max-width: 768px) {
+  .form-container {
+    width: 99%; /* Adjusts the form container to take up almost the full width of the webpage, with a small gap to either side of the form */
+    margin-left: 0; /* Removed the left margin for better alignment on mobile devices */
+  }
+  .form-container .form-row {
+    margin-right: 0; /* Removed the right margin to prevent issues with positioning */
+    margin-left: 0; /* Removed the left margin to prevent issues with positioning */
+    margin-top: 0; /* Removed the top margin so that the form is not pushed too far from the contact information above */
+  }
+  .form-container .form-row .col {
+    padding-right: 2vh; /* Adjusts the padding between the first and last name fields */
+    padding-left: 0; /* Removed the left padding between First and Last name sections */
+  }
+  /* Adjusted the placeholder font size so that it is easier to view on mobile devices*/
+  .form-container input::placeholder,
+  .form-container textarea::placeholder {
+    font-size: 2.2vh;
+  }
+  /* Adjusted the submit button width to take up the full width on mobile devices. A bottom margin was added to make a gap between the button and the interactive map below it */
+  .form-container button[type="submit"] {
+    width: 100%;
+    margin-bottom: 30%;
+  }
+}
 /* ==================================================================================================================== */
 
 /* ============================================== Interactive Google map ============================================== */
@@ -640,6 +667,17 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   justify-content: flex-end; /* Aligns the map to the right side of the flex box */
   margin-right: 0%; /* Adds a right margin to the map container for positioning */
   margin-top: -2.6%; /* Adjusts position of the map upwards, without changing the size of the map */
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media only screen and (max-width: 768px) {
+  #map {
+    width: 99%; /* Adjusts the map width to take up the full width of the screen on mobile devices */
+    height: 40vh; /* Adjusts the map height to an appropriate size for mobile devices */
+    margin: 0; /* Removes all margins from the map */
+    padding: 0; /* Removes all padding from the map */
+    margin-bottom: 30%; /* Added a bottom margin to create a gap between the map and the footer below it */
+  }
 }
 /* ==================================================================================================================== */
 
@@ -699,7 +737,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
     position: static; /* Sets the footer as static so that it does not move when the page is scrolled */
     text-shadow: none; /* Removes the drop shadow from the text, as the text will already be black for these pages and the shadow makes the text appear blurry */
     margin: auto; /* Centers the footer as a whole */
-    color: black; /* Sets the text color to black */
+    color: rgb(0, 0, 0); /* Sets the text color to black */
   }
 }
 /* ================================================================================================================== */
@@ -883,11 +921,11 @@ text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 /* ================================================= Dark mode footer ================================================= */
 /* This is the styling for the dark mode footer for all other pages except for the homepage */
 @media (max-width: 768px) {
-  body:not(.homepage.dark-mode) .footer-text-left,
-  body:not(.homepage.dark-mode) .footer-text-right,
-  body:not(.homepage.dark-mode) .footer-text-midleft,
-  body:not(.homepage.dark-mode) .footer-navigation {
-    color: #ffffff; /* Sets the font colour for dark mode on non homepage tagged webpages */
+  body:not(.homepage) .dark-mode .footer-text-left,
+  body:not(.homepage) .dark-mode .footer-text-right,
+  body:not(.homepage) .dark-mode .footer-text-midleft,
+  body:not(.homepage) .dark-mode .footer-navigation {
+    color: #000000; /* Sets the font colour for dark mode on non homepage tagged webpages */
   }
 }
 /* ==================================================================================================================== */
