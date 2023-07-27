@@ -769,14 +769,6 @@ body#homepage.dark-mode .navbar-toggler {
 body#homepage.dark-mode .navbar-links li a.active {
   color: #ffffff;
 }
-/* inverts the footer colors in dark mode */
-body#homepage.dark-mode .footer-text-left,
-body#homepage.dark-mode .footer-text-right,
-body#homepage.dark-mode .footer-text-midleft,
-body#homepage.dark-mode .footer-navigation {
-  color: #000000; /* Sets the font colour */
-  text-shadow: 0vw 0vw 0vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
-}
 body#homepage.dark-mode .britannia-header {
   color: #000000; /* Sets the font colour */
 }
@@ -919,13 +911,22 @@ text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 /* ================================================================================================================== */
 
 /* ================================================= Dark mode footer ================================================= */
-/* This is the styling for the dark mode footer for all other pages except for the homepage */
+/* This is the styling for the dark mode footer for JUST the homepage */
+body#homepage.dark-mode .footer-text-left,
+body#homepage.dark-mode .footer-text-right,
+body#homepage.dark-mode .footer-text-midleft,
+body#homepage.dark-mode .footer-navigation {
+  color: #000000; /* Sets the font colour */
+  text-shadow: 0vw 0vw 0vw rgba(0, 0, 0, 0.4); /* Maintains the drop shadow previously applied */
+}
+
+/* This is the styling for the dark mode footer for all OTHER pages except for the homepage on mobile devices */
 @media (max-width: 768px) {
-  body:not(.homepage) .dark-mode .footer-text-left,
-  body:not(.homepage) .dark-mode .footer-text-right,
-  body:not(.homepage) .dark-mode .footer-text-midleft,
-  body:not(.homepage) .dark-mode .footer-navigation {
-    color: #000000; /* Sets the font colour for dark mode on non homepage tagged webpages */
+  body.dark-mode:not(.homepage) .footer-text-left,
+  body.dark-mode:not(.homepage) .footer-text-right,
+  body.dark-mode:not(.homepage) .footer-text-midleft,
+  body.dark-mode:not(.homepage) .footer-navigation {
+    color: #FFFFFF; /* Sets the text color to white when dark mode is toggled */
   }
 }
 /* ==================================================================================================================== */
