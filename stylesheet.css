@@ -540,19 +540,31 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 /* =================================================================================================================== */
 
 /* ================================================= Contact headings ================================================= */
-/* This is the styling for the contact headings */
+/* This is the styling for the main 'get in touch' heading */
 .contact-header {
   font-family: Kaisei Tokumin; /* Sets the text font */
   font-size: 3vw; /* Sets the text size */
   margin-top: 1%; /* Adds a 1% margin to the top for positioning */
   text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   }
-  
+/* This is the styling for the contact information text */
+.contact-paragraph {
+  font-family: Kaisei Tokumin; /* Sets the text font */
+  font-size: 1.2vw; /* Sets the text size */
+  text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+}
   /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   @media (max-width: 768px) {
     .contact-header {
       font-size: 3.5rem; /* Adjusts the font size for mobile devices */
       margin-bottom: 10%;
+    }
+  }
+  @media (max-width: 768px) {
+    .contact-paragraph {
+      font-size: 1.7rem; /* Adjusts the font size for mobile devices */
+      margin-bottom: 10%; /* Adds a bottom margin to the accomodation paragraph, spacing it from the text below it, for mobile devices */
+      text-shadow: none; /* Removes the drop shadow for mobile users */
     }
   }
 /* ==================================================================================================================== */
