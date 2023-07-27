@@ -557,7 +557,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   @media (max-width: 768px) {
     .contact-header {
       font-size: 3.5rem; /* Adjusts the font size for mobile devices */
-      margin-bottom: 10%;
+      margin-bottom: 10%; /* Adds a bottom margin to the heading to space it from elements below */
     }
   }
   @media (max-width: 768px) {
@@ -574,7 +574,6 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 .form-container {
   width: 40%; /* Sets the overall width of the form */
   margin-left: 6%; /* Sets the margin to the left of the entire form for positioning */
-  padding-top: 5%; /* Adds padding to the top of the entire form for positioning */
 }
 .form-container .form-group {
   margin-bottom: 2%; /* Adjusts the spacing between each field in the form */
@@ -588,6 +587,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   flex-wrap: wrap; /* Adds wrap to the flex box to prevent the boxes from continuing onto the next line when the limit of it's container is reached */
   margin-right: -1%; /* Adjusts the right margin of the First/Last name fields */
   margin-left: -1%; /* Adjusts the left margin of the First/Last name fields */
+  margin-top: -7%; /* Adjusts the upper margin, moving the entire form upwards */
 }
 .form-container .form-row .col {
   padding-right: 1%; /* Adjusts the space between First and Last name sections */
@@ -639,6 +639,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   display: flex; /* Sets the map container to be a flex box */
   justify-content: flex-end; /* Aligns the map to the right side of the flex box */
   margin-right: 0%; /* Adds a right margin to the map container for positioning */
+  margin-top: -2.6%; /* Adjusts position of the map upwards, without changing the size of the map */
 }
 /* ==================================================================================================================== */
 
