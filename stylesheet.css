@@ -778,32 +778,42 @@ to the other webpages to enhance first impressions. Doing so makes the dark mode
 /* inverts the navigation bar colors in dark mode and removes text shadow to make the navigation options more readable */
 body#homepage.dark-mode .navbar-links li a,
 body#homepage.dark-mode .navbar-toggler {
-  color: black;
-  text-shadow: none;
+  color: black; /* Sets the font colour */
+  text-shadow: none; /* Removes drop shadow */
 }
 body#homepage.dark-mode .navbar-links li a.active {
   color: #ffffff;
 }
-body#homepage.dark-mode .britannia-header {
+/* This is the styling for the Britannia Inn heading in dark mode */
+.dark-mode .britannia-header {
   color: #000000; /* Sets the font colour */
 }
-body#homepage.dark-mode .britannia-paragraph {
+/* This is the styling for the Britannia text paragraph in dark mode */
+.dark-mode .britannia-paragraph {
   color: #000000; /* Sets the font colour */
 }
-body#homepage.dark-mode .btn-outline-secondary {
+/* This is the styling for the 'View menu' button in dark mode */
+.dark-mode .btn-outline-secondary {
   color: #000000; /* Sets the font colour */
   outline: 0.2vw solid rgb(0, 0, 0); /* Sets a responsive outline to white */
 }
-/*This is the styling for the 'View Menu' button' when hovered on */
-body#homepage.dark-mode .btn-outline-secondary:hover {
+/* This is the styling for the 'View Menu' button' when hovered on in dark mode */
+.dark-mode .btn-outline-secondary:hover {
   background-color: #000000; /* Sets the button background to grey when hovered on */
   font-family: Kaisei Tokumin; /* Sets the font type */
   color: #ffffff; /* Sets the font colour to white when hovered on */
 }
-body#homepage.dark-mode .opening-time-header {
+/* This is the styling for the Opening and serving times headings for dark mode */
+.dark-mode .opening-heading-main {
   color: #000000; /* Sets the font colour */
 }
-body#homepage.dark-mode .opening-times-paragraph {
+.dark-mode .opening-hours {
+  color: #000000; /* Sets the font colour */
+}
+.dark-mode .food-serving {
+  color: #000000; /* Sets the font colour */
+}
+.dark-mode .serving-hours {
   color: #000000; /* Sets the font colour */
 }
 /* This is the dark mode styling for the background image on the homepage ONLY */
