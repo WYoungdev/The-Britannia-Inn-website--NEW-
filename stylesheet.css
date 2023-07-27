@@ -882,43 +882,14 @@ text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 }
 /* ================================================================================================================== */
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Dark mode navigation bar  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media screen and (max-width: 768px) {
-  .dark-mode .navbar-links {
-    background-color: #afafaf;
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 5.5vh;
-    right: 8vh;
-    z-index: 1;
-    border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab */
-    align-items: center;
-  }
-  .dark-mode .navbar-links li {
-    margin: 0;
-    padding: 0.2rem;
-  }
-  .dark-mode .navbar-links li a {
-    text-decoration: none;
-    padding: 1rem 2rem; /* Adjusted padding for more spacing between buttons on mobile */
-  }
-  .dark-mode .navbar-links li:last-child a {
-    border-bottom: none;
-  }
-  .dark-mode .navbar-links.show {
-    display: flex;
-  }
-  .dark-mode .navbar-toggler {
-    font-size: 2rem; /* This resizes the toggle button */
-  }
-  .dark-mode .navbar-links li a.active {
-    text-decoration: underline;
-    background: none;
-    font-weight: bold;
-    color: #fff; /* Keeps the consistent white font for the active tab */
-    border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab */
+/* ================================================= Dark mode footer ================================================= */
+/* This is the styling for the dark mode footer for all other pages except for the homepage */
+@media (max-width: 768px) {
+  body:not(.homepage.dark-mode) .footer-text-left,
+  body:not(.homepage.dark-mode) .footer-text-right,
+  body:not(.homepage.dark-mode) .footer-text-midleft,
+  body:not(.homepage.dark-mode) .footer-navigation {
+    color: #ffffff; /* Sets the font colour for dark mode on non homepage tagged webpages */
   }
 }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* ==================================================================================================================== */
