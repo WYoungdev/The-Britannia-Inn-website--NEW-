@@ -215,7 +215,7 @@ body {
     display: block; /* Sets the display type to block for centering the button */
     margin: auto; /* Sets the margins to auto, to also center the button */
     margin-top: 5%; /* Adds a top margin to bring the button down from the element above it */
-    margin-bottom: 20%; /* Adds a bottom margin to create a gap between the button and the element below it */
+    margin-bottom: 10%; /* Adds a bottom margin to create a gap between the button and the element below it */
     font-size: 1.8rem; /* Changes the font size */
     width: 60%; /* Sets the button to consume 60% of the width of the page */
     justify-content: center; /* Centers all of the content within the container */
@@ -245,6 +245,31 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (max-width: 768px) {
+  .opening-times-container {
+    display: flex; /* Sets the container type to a flex container */
+    flex-direction: column; /* Aligns the contents of the container to appear vertically in a column */
+    justify-content: center; /* Aligns the content to the center of the webpage horizontally */
+    align-items: center; /* Aligns all of the container contents to the center of the container */
+    text-align: center; /* Centers all text within the container */
+    position: static; /* Resets the positioning of the container so that the flex box can override positioning */
+    margin-bottom: 20%; /* Gives the container a bottom margin to space it from the element below it, in this case, the footer */
+  }
+  .opening-heading-main {
+    font-size: 3rem; /* Adjusts the font size */
+    color: #ffffff; /* Adjusts the font colour */
+    text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
+  }
+  .opening-hours,
+  .food-serving,
+  .serving-hours {
+    font-size: 1.5rem; /* Adjusts the font size */
+    color: #ffffff; /* Adjusts the font colour */
+    text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
   .opening-times-container {
     display: flex; /* Sets the container type to a flex container */
     flex-direction: column; /* Aligns the contents of the container to appear vertically in a column */
