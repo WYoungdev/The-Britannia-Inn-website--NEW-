@@ -105,7 +105,7 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* Collapsible navigation on medium sized screens */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     display: flex; /* Places the navigation bar in a flex box for easier positioning */
     justify-content: flex-end; /* Positions all of the flex box content to the right side */
