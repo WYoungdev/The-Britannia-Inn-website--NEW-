@@ -1034,6 +1034,39 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
     color: rgb(0, 0, 0); /* Sets the text color to black */
   }
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* This is the styling for the footer of the homepage on medium devices */
+/* This styling is specifically for the homepage class within the body */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .homepage .footer-text-left,
+  .homepage .footer-text-right,
+  .homepage .footer-text-midleft,
+  .homepage .footer-navigation {
+    font-size: 1em; /* Sets the font size */
+    text-align: center; /* Aligns the text to the center of the page horizontally */
+    position: static; /* Sets the footer as static so that it does not move when the page is scrolled */
+    text-shadow: 0.2vw 0.2vw 0.1vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
+    margin: auto; /* Centers the footer as a whole */
+    color: white; /* Sets the text color to white for homepage on medium devices */
+  }
+}
+
+/* This is the styling for non-homepage webpages on medium devices */
+/* The body does not contain homepage in this case, so alternative styling below is applied */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body:not(.homepage) .footer-text-left,
+  body:not(.homepage) .footer-text-right,
+  body:not(.homepage) .footer-text-midleft,
+  body:not(.homepage) .footer-navigation {
+    font-size: 1em; /* Sets the font size */
+    text-align: center; /* Aligns the text to the center of the page horizontally */
+    position: static; /* Sets the footer as static so that it does not move when the page is scrolled */
+    text-shadow: none; /* Removes the drop shadow from the text, as the text will already be black for these pages and the shadow makes the text appear blurry */
+    margin: auto; /* Centers the footer as a whole */
+    color: rgb(0, 0, 0); /* Sets the text color to black */
+  }
+}
 /* ================================================================================================================== */
 /* ================================================================================================================== */
 /* ================================================================================================================== */
