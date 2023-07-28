@@ -208,6 +208,19 @@ body {
     justify-content: center; /* Centers all of the content within the container */
   }
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn-outline-secondary {
+    display: block; /* Sets the display type to block for centering the button */
+    margin: auto; /* Sets the margins to auto, to also center the button */
+    margin-top: 5%; /* Adds a top margin to bring the button down from the element above it */
+    margin-bottom: 20%; /* Adds a bottom margin to create a gap between the button and the element below it */
+    font-size: 1.8rem; /* Changes the font size */
+    width: 60%; /* Sets the button to consume 60% of the width of the page */
+    justify-content: center; /* Centers all of the content within the container */
+  }
+}
 /* ================================================================================================================= */
 
 /* ============================================== Opening times headings ============================================== */
