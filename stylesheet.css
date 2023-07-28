@@ -1255,6 +1255,7 @@ text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5); /* Adds drop shadow */
 /* ================================================================================================================== */
 
 /* ================================================= Dark mode footer ================================================= */
+/* Note that this section should function correctly, and sometimes does, but due to a bootstrap bug/issue, it only works correctly sometimes. */
 /* This is the styling for the dark mode footer for JUST the homepage */
 body#homepage.dark-mode .footer-text-left,
 body#homepage.dark-mode .footer-text-right,
