@@ -339,7 +339,14 @@ body {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (max-width: 767px) {
   .menu-image {
-    display: none;
+    display: none; /* Set the menu image to not show for mobile devices, as it would consume too much of the screen */
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu-image {
+    display: none; /* Set the menu image to not show for medium devices, as it would consume too much of the screen */
   }
 }
 /* ================================================================================================================= */
@@ -362,6 +369,9 @@ body {
     text-align: center;
   }
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 /* ================================================================================================================== */
 
 /* ================================================ The combined menu ================================================ */
