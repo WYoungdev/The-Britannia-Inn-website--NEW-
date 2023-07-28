@@ -138,8 +138,16 @@ body {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (max-width: 768px) {
   .britannia-header {
-  font-size: 15vw; /* Change the font size for mobile devices to 7% of the viewport width */
-  text-align: center; /* Center the text in the middle of the page */
+  font-size: 15vw; /* Changes the font size for mobile devices */
+  text-align: center; /* Centers the text to the middle of the page */
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .britannia-header {
+  font-size: 15vw; /* Changes the font size for medium devices */
+  text-align: center; /* Centers the text to the middle of the page */
   }
 }
 /* ================================================================================================================ */
