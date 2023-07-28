@@ -373,9 +373,10 @@ body {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (min-width: 768px) and (max-width: 1024px) {
   .menu-header {
-    font-size: 4rem; /* Change the font size for medium devices */
+    font-size: 5rem; /* Change the font size for medium devices */
     margin: 0 auto; /* Center the menu header horizontally */
     text-align: center; /* Centers the heading horizontally */
+    margin-top: 3%; /* Adds a top margin for better positioning on mobile devices */
   }
 }
 /* ================================================================================================================== */
@@ -453,6 +454,37 @@ body {
     font-size: 1.4em; /* Adjusts the font size of menu item prices for mobile users */
     flex-basis: 100%; /* Sets the flex width to 100% to occupy the full width of the screen */
     margin-bottom: 5%; /* Adds a gap between menu items and their prices for mobile users */
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #menu-container {
+    float: none; /* Removes the previous float setting for medium users */
+    width: 100%; /* Sets the width to 100% to occupy the full width of the screen */
+    margin-top: 0; /* Resets the top default margin for medium users */
+  }
+  .menu-section {
+    margin-bottom: 10%; /* Adjusts spacing between menu sections for medium users */
+  }
+  .menu-item {
+    flex-direction: column; /* Displays all menu items vertically for medium users */
+    align-items: flex-start; /* Aligns all items to the left for medium users so that the items look good */
+  }
+  .menu-item-title {
+    font-size: 1.8em; /* Adjusts the font size of menu items for medium users */
+    flex-basis: 100%; /* Sets the flex width  for the menu titles to 100% to occupy the full width of the screen */
+    margin-bottom: 5%; /* Adds a gap between menu items for medium users so that the menu does not look cluttered */
+  }
+  .menu-item-desc {
+    font-size: 1.2em; /* Adjusts the font size of the item descriptions for medium users */
+    flex-basis: 100%; /* Set the flex width to 100% to occupy the full width of the screen */
+    margin-bottom: 5%; /* Adds a gap between menu items and their descriptions for medium users */
+  }
+  .menu-item-price {
+    font-size: 1.4em; /* Adjusts the font size of menu item prices for medium users */
+    flex-basis: 100%; /* Sets the flex width to 100% to occupy the full width of the screen */
+    margin-bottom: 5%; /* Adds a gap between menu items and their prices for medium users */
   }
 }
 /* ==================================================================================================================== */
