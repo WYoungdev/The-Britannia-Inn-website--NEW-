@@ -666,6 +666,17 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
     margin-bottom: 10%; /* Adds a margin to the bottom of the local area header, spacing it out from other elements */
   }
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .local-area-header {
+    font-size: 5rem; /* Change the font size for medium devices */
+    margin: 0 auto; /* Center the menu header horizontally */
+    text-align: center; /* Centers the heading horizontally */
+    margin-top: 3%; /* Adds a top margin for better positioning on medium devices */
+    margin-bottom: 8%; /* Adds a bottom margin to improve positioning for medium devices */
+  }
+}
 /* =================================================================================================================== */
 
 /* ================================================== Local area text ================================================= */
@@ -680,8 +691,17 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 @media (max-width: 768px) {
   .local-area-paragraph {
     font-size: 1.7rem; /* Adjusts the font size for mobile devices */
-    margin-bottom: 10%; /* Adds a bottom margin to the accomodation paragraph, spacing it from the text below it, for mobile devices */
+    margin-bottom: 10%; /* Adds a bottom margin to the local area text, spacing it from the text below it, for mobile devices */
     text-shadow: none; /* Removes the drop shadow for mobile users */
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .local-area-paragraph {
+    font-size: 2.2rem; /* Adjusts the font size for medium devices */
+    margin-bottom: 8%; /* Adds a bottom margin to the local area text, spacing it from the text below it, for medium devices */
+    text-shadow: none; /* Removes the drop shadow for medium users */
   }
 }
 /* ==================================================================================================================== */
@@ -733,6 +753,29 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   }
   .local-description {
     font-size: 1.3rem; /* adjusts the font size for mobile users */
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .local-gallery {
+    flex-direction: column; /* Sets the flex container content to stack vertically for medium devices */
+  }
+  .local-images {
+    text-align: center; /* Aligns the text for each image to the center of the container */
+    margin: 5%; /* Adds a margin around each of the images */
+    margin-top: 0%; /* Removes margin above each of the images to space them properly for medium users*/
+  }
+  .local-images img {
+    width: 40vh; /* adjusts the size of the image for medium users */
+  }
+  .local-title {
+    font-size: 2.2rem; /* Changes the font size for medium users */
+    margin: 1%; /* adjusts margin surrounding each image title for medium users */
+  }
+  .local-description {
+    font-size: 1.3rem; /* adjusts the font size for medium users */
+    text-shadow: none; /* Removes the drop shadow for medium users */
   }
 }
 /* =================================================================================================================== */
