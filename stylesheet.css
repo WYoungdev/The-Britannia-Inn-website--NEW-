@@ -804,10 +804,25 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   @media (max-width: 768px) {
     .contact-paragraph {
       font-size: 1.7rem; /* Adjusts the font size for mobile devices */
-      margin-bottom: 10%; /* Adds a bottom margin to the accomodation paragraph, spacing it from the text below it, for mobile devices */
+      margin-bottom: 10%; /* Adds a bottom margin to the contact paragraph, spacing it from the text below it, for mobile devices */
       text-shadow: none; /* Removes the drop shadow for mobile users */
     }
   }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-header {
+    font-size: 5rem; /* Adjusts the font size for medium devices */
+    margin-bottom: 10%; /* Adds a bottom margin to the heading to space it from elements below */
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-paragraph {
+    font-size: 2.2rem; /* Adjusts the font size for medium devices */
+    margin-bottom: 10%; /* Adds a bottom margin to the contact paragraph, spacing it from the text below it, for medium devices */
+    text-shadow: none; /* Removes the drop shadow for medium users */
+  }
+}
 /* ==================================================================================================================== */
 
 /* =============================================== Contact form styling =============================================== */
@@ -880,7 +895,7 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
     margin-top: 0; /* Removed the top margin so that the form is not pushed too far from the contact information above */
   }
   .form-container .form-row .col {
-    padding-right: 2vh; /* Adjusts the padding between the first and last name fields */
+    padding-right: 2vh; /* Adjusts the padding between the First and Last name fields */
     padding-left: 0; /* Removed the left padding between First and Last name sections */
   }
   /* Adjusted the placeholder font size so that it is easier to view on mobile devices*/
@@ -892,6 +907,33 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
   .form-container button[type="submit"] {
     width: 100%;
     margin-bottom: 30%;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-container {
+    width: 99%; /* Adjusts the form container to take up almost the full width of the webpage, with a small gap to either side of the form */
+    margin-left: 0; /* Removed the left margin for better alignment on medium devices */
+  }
+  .form-container .form-row {
+    margin-right: 0; /* Removed the right margin to prevent issues with positioning */
+    margin-left: 0; /* Removed the left margin to prevent issues with positioning */
+    margin-top: 0; /* Removed the top margin so that the form is not pushed too far from the contact information above */
+  }
+  .form-container .form-row .col {
+    padding-right: 2vh; /* Adjusts the padding between the First and Last name fields */
+    padding-left: 0; /* Removed the left padding between First and Last name sections */
+  }
+  /* Adjusted the placeholder font size so that it is easier to view on medium devices*/
+  .form-container input::placeholder,
+  .form-container textarea::placeholder {
+    font-size: 2.2vh;
+  }
+  /* Adjusted the submit button width to take up the full width on medium devices. A bottom margin was added to make a gap between the button and the interactive map below it */
+  .form-container button[type="submit"] {
+    width: 100%;
+    margin-bottom: 20%;
   }
 }
 /* ==================================================================================================================== */
@@ -911,10 +953,21 @@ text-shadow: 0.2vw 0.2vw 0.8vw rgba(0, 0, 0, 0.4); /* Adds drop shadow */
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for mobile devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   #map {
     width: 99%; /* Adjusts the map width to take up the full width of the screen on mobile devices */
     height: 40vh; /* Adjusts the map height to an appropriate size for mobile devices */
+    margin: 0; /* Removes all margins from the map */
+    padding: 0; /* Removes all padding from the map */
+    margin-bottom: 30%; /* Added a bottom margin to create a gap between the map and the footer below it */
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #map {
+    width: 99%; /* Adjusts the map width to take up the full width of the screen on medium devices */
+    height: 55vh; /* Adjusts the map height to an appropriate size for medium devices */
     margin: 0; /* Removes all margins from the map */
     padding: 0; /* Removes all padding from the map */
     margin-bottom: 30%; /* Added a bottom margin to create a gap between the map and the footer below it */
