@@ -105,7 +105,25 @@ body {
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
+/* Collapsible navigation on medium sized screens */
+@media (min-width: 768px) {
+  .navbar {
+    display: flex; /* Places the navigation bar in a flex box for easier positioning */
+    justify-content: flex-end; /* Positions all of the flex box content to the right side */
+    padding: 3.7rem 3.5rem 1rem 1rem; /* Reduces the padding for the entire navigation bar for medium screen users */
+  }
+  .navbar-toggler {
+    font-size: 2rem; /* Reduce the size of the toggle button for medium screen users */
+    padding: 0rem; /* Removes the padding for the toggle button for medium screen users, so that the entire navigation bar fits on the screen */
+  }
+  .navbar-links li a {
+    font-size: 1.8rem; /* Reduces the font size of navigation options for medium screen users */
+    padding: 0.8rem 0.8rem; /* Reduces the padding of navigation options for medium screen users */
+  }
+  .navbar-links li {
+    margin-left: 0.5rem; /* Reduces the left margin for the list of links in the navigation bar for medium screen users */
+  }
+}
 /* ================================================================================================================ */
 
 /* ========================================== The Britannia Inn heading ========================================== */
