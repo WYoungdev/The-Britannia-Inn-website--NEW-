@@ -314,6 +314,15 @@ body {
     height: 100%; /* Adjust the height to 100% for mobile devices to cover the full height of the screen */
   }
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Media query for medium screen devices !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page-background {
+    position: fixed; /* Change the position to fixed for medium devices */
+    top: 11%; /* Adjust the top position to create a small gap at the top */
+    height: 100%; /* Adjust the height to 100% for medium devices to cover the full height of the screen */
+  }
+}
 /* ================================================================================================================= */
 
 /* ============================================== The Menu food image ============================================== */
