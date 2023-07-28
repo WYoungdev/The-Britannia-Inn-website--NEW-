@@ -68,39 +68,38 @@ body {
 /* Collapsible navigation on smaller screens */
 @media (max-width: 768px) {
   .navbar-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 5.5vh;
-    right: 8vh;
-    z-index: 1;
-    background-color: #525252;
-    border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab */
-    align-items: center;
+    flex-direction: column; /* Aligns the content of the flex box to be vertical instead of horizontal */
+    position: absolute; /* Sets the position of the navigation bar to be absolute for mobile users */
+    top: 5.5vh; /* Adjusts the top margin for the navigation bar on mobile devices */
+    right: 8vh; /* Adjusts the right margin of the navigation bar for mobile devices */
+    z-index: 1; /* Sets the navigation bar element Z-index to 1, ensuring that it will always appear above any other elements such as the background */
+    background-color: #525252; /* Adds a background colour to the mobile navigation menu to make it more visible */
+    border-radius: 0.5rem; /* Keeps the consistent corner rounding on the navigation bar for mobile users */
+    align-items: center; /* Centers all items on the navigation bar for mobile users */
   }
   .navbar-links li {
-    margin: 0;
-    padding: 0.2rem;
+    margin: 0; /* Removes the previous margin for the navigation links */
+    padding: 0.2rem; /* Adds slight padding around each of the navigation links */
   }
   .navbar-links li a {
-    text-decoration: none;
-    padding: 1rem 2rem; /* Adjusted padding for more spacing between buttons on mobile */
+    text-decoration: none; /* Removes any underline from the navigation option links */
+    padding: 1rem 2rem; /* Adjusts the padding for extra spacing between options on mobile devices */
   }
   .navbar-links li:last-child a {
-    border-bottom: none;
+    border-bottom: none; /* Removes the bottom border from the last option in the navigation menu */
   }
   .navbar-links.show {
-    display: flex;
+    display: flex; /* Adds all shown navigation options to a flex container */
   }
   .navbar-toggler {
-    font-size: 2rem; /* This resizes the toggle button */
+    font-size: 2rem; /* Resizes the toggle button for mobile devices */
   }
   .navbar-links li a.active {
-    text-decoration: underline;
-    background: none;
-    font-weight: bold;
-    color: #fff; /* Keeps the consistent white font for the active tab */
-    border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab */
+    text-decoration: underline; /* Underlines the active tab on mobile devices */
+    background: none; /* Removes any background from the active navigation option */
+    font-weight: bold; /* Sets the active navigation option to be bold for mobile users, enhancing visibility */
+    color: #fff; /* Keeps the consistent white font for the active tab on mobile devices */
+    border-radius: 0.5rem; /* Keeps the consistent corner rounding for the active tab on mobile devices */
   }
 }
 
